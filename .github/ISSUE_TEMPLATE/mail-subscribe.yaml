@@ -1,0 +1,11 @@
+name: 仅邮件订阅
+description: 仅邮件订阅
+labels: [subscribe]
+title: "[邮件订阅]"
+body:
+  - type: input
+    id: mail-subscribe
+    attributes:
+      label: 邮箱订阅
+      description: 是否选择订阅博客文章更新通知，若想取消订阅将邮箱置空即可
+      placeholder: "如: site@weekdaycare.cn"
