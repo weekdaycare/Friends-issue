@@ -2,65 +2,27 @@ name: Generator
 
 on:
   issues:
-  watch:
-    types: [started]
+    types: [opened, edited]
 
 jobs:
-  label:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-
-    - name: Extract email
-      id: extract_email
-      run: |
-        import json
-        import os
-        from github import Github
-
-        issue_body = os.environ['ISSUE_BODY']
-        issue_data = json.loads(issue_body)
-        email = issue_data.get('mail-subscribe', '').strip()
-
-        if email:
-            print(f"::set-output name=has_email::true")
-        else:
-            print(f"::set-output name=has_email::false")
-
-    - name: Add or remove label
-      uses: actions-ecosystem/action-add-labels@v1
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        labels: subscribe
-      if: steps.extract_email.outputs.has_email == 'true'
-
-    - name: Remove label
-      if: steps.extract_email.outputs.has_email == 'false'
-      run: |
-        curl -X DELETE \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels/subscribe
-
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/checkout@master
+    - name: Set up Python #安装python
+      uses: actions/setup-python@v1
       with:
         python-version: 3.8
     - name: Install requirements #安装requests
       run: |
         pip install -r requirements.txt
+
+    - name: Detect and Label Emails #检测订阅标签
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: python generator/detect_and_label.py
+
     - name: Update links #更新
       run: |
         python generator/main.py
