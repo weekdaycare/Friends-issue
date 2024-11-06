@@ -9,8 +9,4 @@
 # 忽略 Jupyter Notebook 文件
 *.ipynb
 *.log
-
-# 忽略数据文件
-*.json
-
 *.bat

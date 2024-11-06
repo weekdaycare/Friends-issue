@@ -58,7 +58,7 @@ def getData(repo, parameter, sort, data_pool, json_pool):
                         mail_value = mail_link['href'].replace('mailto:', '')
                         if mail_value:  # 过滤空值
                             data_pool[-1]['mail-subscribe'] = mail_value
-                
+
                 except Exception as e:
                     continue
     except Exception as e:
@@ -106,4 +106,4 @@ for filename in filenames:
 # 输出 subscribe.json
 subscribe_list = [item.get('mail-subscribe', '') for sublist in json_pool for item in sublist if item.get('mail-subscribe', '')]
 with open(outputdir + '/subscribe.json', 'w', encoding='utf-8') as file_obj:
-    json.dump(subscribe_list, file_obj, ensure_ascii=False, indent=2)
+    json.dump({"emails": subscribe_list}, file_obj, ensure_ascii=False, indent=2)
