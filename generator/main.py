@@ -103,7 +103,7 @@ for filename in filenames:
         json.dump(data, file_obj, ensure_ascii=False, indent=2)
     i += 1
 
-# Output subscribe.json
+# 输出 subscribe.json
 subscribe_list = [item.get('mail-subscribe', '') for sublist in json_pool for item in sublist if item.get('mail-subscribe', '')]
 with open(outputdir + '/subscribe.json', 'w', encoding='utf-8') as file_obj:
     json.dump(subscribe_list, file_obj, ensure_ascii=False, indent=2)
