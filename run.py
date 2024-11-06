@@ -17,13 +17,10 @@ if config["spider_settings"]["enable"]:
     print("爬虫已启用")
     json_url = config['spider_settings']['json_url']
     if json_url.startswith('http'):
-        # json_url 为 HTTP 或 HTTPS 链接时，保持不变
         pass
     elif '/' in json_url:
-        # json_url 为 GitHub 仓库路径字符串时
         json_url = f"https://raw.githubusercontent.com/{json_url}/output/v2/data.json"
     elif not json_url:
-        # json_url 为空时，使用默认的 GitHub 仓库路径
         json_url = f"https://raw.githubusercontent.com/{fcl_repo}/output/v2/data.json"
     else:
         print("错误：未提供有效的 json_url 或 FCL_REPO 环境变量")

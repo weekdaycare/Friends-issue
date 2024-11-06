@@ -2,7 +2,7 @@
 # 网络请求设置
 request:
   timeout: 10 # 超时设置
-  ssl: false # ssl设置
+  ssl: true # ssl设置
 
 # 要抓取的 issues 配置
 issues:
