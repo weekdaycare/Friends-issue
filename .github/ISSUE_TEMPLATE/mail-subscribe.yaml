@@ -7,5 +7,5 @@ body:
     id: mail-subscribe
     attributes:
       label: 邮箱订阅
-      description: 是否选择订阅博客文章更新通知，若想取消订阅将邮箱置空即可
-      placeholder: "如: site@weekdaycare.cn"
+      description: 是否选择订阅博客文章更新通知，若想取消订阅将邮箱置空或关闭issue
+      placeholder: "请在该处填写邮箱如: site@weekdaycare.cn"

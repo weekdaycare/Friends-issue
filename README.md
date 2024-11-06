@@ -1,14 +1,12 @@
 # Friends-issue
 
-基于github issue托管的友链管理工具，整合issues-json-generator与Friend-Circle-Lite的功能，一个仓库完成友链管理，朋友圈构建与邮箱订阅等功能。
+基于github issue托管的友链管理工具，整合 [issues-json-generator](https://github.com/xaoxuu/issues-json-generator) 与 [Friend-Circle-Lite](https://github.com/willow-god/Friend-Circle-Lite) 的功能，一个仓库完成友链管理，朋友圈构建与邮箱订阅等功能。
 
-自动提取本仓库 issues 中第一段 `JSON` 代码块并保存到仓库中，解决了直接调用 GitHub API 频率有限制以及速度过慢的问题。（你可以通过其它 N 种方式访问仓库文件）
+简单来说它将自动提取本仓库 issues 中第一段 `JSON` 代码块并保存到仓库中，同时会提取 `subscribe` 标签下所有 open 状态的 issue 中的 `email` 地址，生成静态 json 数据，你可以根据
 
 例如动态友链：https://github.com/xaoxuu/friends
 
 随意发挥你的创意吧～
-
-> 本项目基于 [IJGP v1](#ijgp-协议) 协议
 
 ## 使用方法
 
@@ -31,23 +29,22 @@ issues:
 
 2. 打开 action 运行权限。
 
-其他配置可见 Friend-Circle-Lite 文档
+其他配置可见 [Friend-Circle-Lite](https://github.com/willow-god/Friend-Circle-Lite) 文档
 
-与官方邮件订阅的格式不同，我将邮件订阅功能集成在issue申请中，你可以在申请友链时填写邮箱获取订阅功能，置空邮箱即取消订阅。
+与 Friend-Circle-Lite 邮件订阅的格式不同，我将邮件订阅功能集成在 issue 申请中，你可以在申请友链时填写邮箱获取订阅功能，也可以仅订阅本站不交换友链。action 会自动检测你的 issue 中是否包含 email 地址。如果想要取消订阅，关闭 issue 或者将邮箱地址置空即可。
 
 ## 测试是否配置成功
 
 1. 新建 issue 并按照模板要求填写提交。
-2. 等待 Action 运行完毕，检查 `output` 分支是否有 `/v2/data.json` 文件或`/v2/<组名>.json`，内容是否正确，如果正确则表示已经配置成功。
+2. 当你的 issue 中包含邮箱地址时 action 会自动为该 issue 打上 `subscribe` 标签
+3. 等待 Action 运行完毕，检查 `output` 分支是否有 `/v2/data.json` 文件或`/v2/<组名>.json`，内容是否正确，如果正确则表示已经配置成功。
 
 
 ## IJGP 协议
 
-**[IJGP](https://github.com/topics/ijgp)** 全称为 **Issues-Json Generator Protocol**，本协议目的在于减少重复造轮子和碎片化，改善大家跨项目使用体验。
+> 本项目基于 **[IJGP v1](https://github.com/topics/ijgp)** 协议，全称为 **Issues-Json Generator Protocol**
 
-在设计工具时，在满足如下场景的需求的地方需要使用与之对应的字段名：
-
-### v1
+## output 输出
 
 | 字段 | 类型 | 用途 |
 | :-- | :-- | :-- |
@@ -58,7 +55,9 @@ issues:
 | keywords | string | 关键词，英文逗号隔开 |
 | screenshot | string | 屏幕截图 |
 
-```json
+### 友链 json 输出格式
+
+```json data.json
 {
   "content": [
     {
@@ -72,70 +71,32 @@ issues:
 }
 ```
 
-### v2（修订中，暂未发布）
+### email 订阅输出格式
 
-> 相比 v1 版本，缩略图字段发生变动，且数据增加 `ijgp` 字段用来表示使用的协议版本。
+朋友圈数据
 
-| 字段 | 类型 | 用途 |
-| :-- | :-- | :-- |
-| title | string | 主标题 |
-| url | string | 主链接 |
-| avatar | string | 头像链接 |
-| description | string | 描述，建议200字以内 |
-| keywords | string | 关键词，英文逗号隔开 |
-| thumbnail | string | 缩略图（旧版的“屏幕截图”含义不明） |
-
-
-```json
+```json all.json
 {
-  "ijgp": "v2",
-  "data": [
+  "statistical_data": {
+    "friends_num": num,
+    "active_num": num,
+    "error_num": num,
+    "article_num": num,
+    "last_updated_time": ""
+  },
+  "article_data": [
     {
       "title": "",
-      "url": "",
-      "avatar": "",
-      ...
-    }
+      "created": "",
+      "link": "",
+      "author": "",
+      "avatar": ""
+    },
     ...
   ]
 }
 ```
 
-### 如何使用协议
+## page 输出
 
-> 协议会根据需要增加新的字段，但已有字段不会更改，如需更改，将会创建新的协议版本，这样使用同一个版本协议的所有前后端输出和得到的数据字段都是一致的。
-
-例如网站需要显示只有头像和昵称的极简友链，那么模板可以配置为：
-
-```json
-{
-  "title": "",
-  "url": "",
-  "avatar": ""
-}
-```
-
-例如希望显示友链关键词、描述，那么模板可以配置为：
-
-```json
-{
-  "title": "",
-  "url": "",
-  "avatar": "",
-  "keywords": "",
-  "description": ""
-}
-```
-
-例如带有缩略图的网站收藏夹，那么模板可以配置为：
-
-```json
-{
-  "title": "",
-  "url": "",
-  "avatar": "",
-  "thumbnail": ""
-}
-```
-
-前端（数据使用端）只需要根据实际需要，依据协议中的字段进行读取和显示。
+包含静态页面与文件，你可以将其部署在 github page 或者 vercel cloudflare 等其他地方，具体使用请参考 Friend-Circle-Lite 官方文档。
