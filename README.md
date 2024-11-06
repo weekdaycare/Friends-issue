@@ -1,4 +1,6 @@
-# Issues-Json Generator
+# Friends-issue
+
+基于github issue托管的友链管理工具，整合issues-json-generator与Friend-Circle-Lite的功能，一个仓库完成友链管理，朋友圈构建与邮箱订阅等功能。
 
 自动提取本仓库 issues 中第一段 `JSON` 代码块并保存到仓库中，解决了直接调用 GitHub API 频率有限制以及速度过慢的问题。（你可以通过其它 N 种方式访问仓库文件）
 
@@ -14,7 +16,7 @@
 
 ```yaml
 issues:
-  repo: xaoxuu/friends # 仓库持有者/仓库名
+  repo: weekdaycare/Friends-issue # 仓库持有者/仓库名
   label: active  # 只能配置1个或留空，留空则所有open的issue都会被抓取。配置1个时，issue只有在具有该标签时才被抓取
   groups: # 填写用来分组的label名称。留空则所有被抓取的issue输出至data.json，否则按照输出与组名同名的json文件
   sort: updated-desc # 排序，按最近更新，取消此项则按创建时间排序
@@ -28,6 +30,10 @@ issues:
 | label:        | groups: ["ordinary", "top"] | ordinary.json, top.json | open的、label包含ordinary或top的issue             |
 
 2. 打开 action 运行权限。
+
+其他配置可见 Friend-Circle-Lite 文档
+
+与官方邮件订阅的格式不同，我将邮件订阅功能集成在issue申请中，你可以在申请友链时填写邮箱获取订阅功能，置空邮箱即取消订阅。
 
 ## 测试是否配置成功
 
