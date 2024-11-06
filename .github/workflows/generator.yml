@@ -21,6 +21,8 @@ jobs:
     - name: Detect and Label Emails #检测订阅标签
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ISSUE_NUMBER: ${{ github.event.issue.number }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
       run: python generator/detect_and_label.py
 
     - name: Update links #更新
