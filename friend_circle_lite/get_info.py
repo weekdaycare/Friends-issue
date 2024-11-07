@@ -79,63 +79,24 @@ def check_feed(blog_url, session):
             如果 feed 链接可访问，则返回 ['feed', feed_url]；
             如果都不可访问，则返回 ['none', blog_url]。
     """
+    paths = {
+        'atom': '/atom.xml',
+        'rss': '/rss.xml',
+        'feed': '/feed',
+        'rss2': '/rss2.xml',
+        'feed2': '/feed.xml',
+        'feed3': '/feed/',
+        'index': '/index.xml'
+    }
     
-    atom_url = blog_url.rstrip('/') + '/atom.xml'
-    rss_url = blog_url.rstrip('/') + '/rss.xml'  # 2024-07-26 添加 /rss.xml内容的支持
-    rss2_url = blog_url.rstrip('/') + '/rss2.xml'
-    feed_url = blog_url.rstrip('/') + '/feed'
-    feed2_url = blog_url.rstrip('/') + '/feed.xml'  # 2024-07-26 添加 /feed.xml内容的支持
-    feed3_url = blog_url.rstrip('/') + '/feed/'  # 2024-07-26 添加 /feed/内容的支持
-    index_url = blog_url.rstrip('/') + '/index.xml' # 2024-07-25 添加 /index.xml内容的支持
-    
-    try:
-        atom_response = session.get(atom_url, headers=headers, timeout=timeout)
-        if atom_response.status_code == 200:
-            return ['atom', atom_url]
-    except requests.RequestException:
-        pass
-    
-    try:
-        rss_response = session.get(rss_url, headers=headers, timeout=timeout)
-        if rss_response.status_code == 200:
-            return ['rss', rss_url]
-    except requests.RequestException:
-        pass
-    
-    try:
-        rss_response = session.get(rss2_url, headers=headers, timeout=timeout)
-        if rss_response.status_code == 200:
-            return ['rss2', rss2_url]
-    except requests.RequestException:
-        pass
-
-    try:
-        feed_response = session.get(feed_url, headers=headers, timeout=timeout)
-        if feed_response.status_code == 200:
-            return ['feed', feed_url]
-    except requests.RequestException:
-        pass
-    
-    try:
-        feed_response = session.get(feed2_url, headers=headers, timeout=timeout)
-        if feed_response.status_code == 200:
-            return ['feed2', feed2_url]
-    except requests.RequestException:
-        pass
-    
-    try:
-        feed_response = session.get(index_url, headers=headers, timeout=timeout)
-        if feed_response.status_code == 200:
-            return ['index', index_url]
-    except requests.RequestException:
-        pass
-    
-    try:
-        feed_response = session.get(feed3_url, headers=headers, timeout=timeout)
-        if feed_response.status_code == 200:
-            return ['feed3', feed3_url]
-    except requests.RequestException:
-        pass
+    for feed_type, path in paths.items():
+        feed_url = blog_url.rstrip('/') + path
+        try:
+            response = session.get(feed_url, headers=headers, timeout=timeout)
+            if response.status_code == 200:
+                return [feed_type, feed_url]
+        except requests.RequestException:
+            continue
     
     return ['none', blog_url]
 
@@ -259,33 +220,26 @@ def process_friend(friend, session, count, specific_RSS=[]):
         }
 
 def extract_friend_info(content):
-    try:
-        name = content.get('title')
-        link = content.get('url')
-        avatar = content.get('avatar')
-        if all([name, link, avatar]):
-            return [name, link, avatar]
-    except Exception as e:
-        print(f"提取朋友信息失败: {str(e)}")
-        return None
+    name = content.get('title')
+    link = content.get('url')
+    avatar = content.get('avatar')
+    if all([name, link, avatar]):
+        print(f"提取到朋友信息: Name={name}, Link={link}, Avatar={avatar}")
+        return [name, link, avatar]
+    print(f"缺少信息，无法提取: Name={name}, Link={link}, Avatar={avatar}")
+    return None
 
 def merge_json_data(json_list):
     friends_list = []
     seen_links = set()
     
     for json_data in json_list:
-        if 'content' in json_data:  # 检查是否包含 'content'
-            for content in json_data['content']:
-                friend_info = extract_friend_info(content)
-                if friend_info:
-                    if friend_info[1] not in seen_links:
-                        friends_list.append(friend_info)
-                        seen_links.add(friend_info[1])
-        elif 'friends' in json_data:  # 如果存在 'friends' 键
-            for friend_info in json_data['friends']:
-                if friend_info[1] not in seen_links:
-                    friends_list.append(friend_info)
-                    seen_links.add(friend_info[1])
+        data_key = 'content' if 'content' in json_data else 'friends'
+        for content in json_data.get(data_key, []):
+            friend_info = extract_friend_info(content) if data_key == 'content' else content
+            if friend_info and friend_info[1] not in seen_links:
+                friends_list.append(friend_info)
+                seen_links.add(friend_info[1])
 
     print(f"合并完成，总共提取到 {len(friends_list)} 位朋友信息")
     return {'friends': friends_list}
@@ -307,26 +261,20 @@ def fetch_and_process_data(json_url, specific_RSS=[], count=5, expire_date=60):
     # 获取 groups
     groups = config['issues'].get('groups', [])
     json_data_list = []
-    if json_url.startswith('http'):
-        response = session.get(json_url, headers=headers, timeout=timeout)
-        response.raise_for_status()
-        data = response.json()
-        json_data_list.append(data)
+    urls_to_fetch = []
+
+    base_url = f"https://raw.githubusercontent.com/{json_url if '/' in json_url else fcl_repo}/output/v2"
+    if groups:
+        for group in groups:
+            url = f"{base_url}/{group}.json"
+            urls_to_fetch.append(url)
     else:
-        base_url = f"https://raw.githubusercontent.com/{json_url if '/' in json_url else fcl_repo}/output/v2"
-        if groups:
-            for group in groups:
-                group_url = f"{base_url}/{group}.json"
-                response = session.get(group_url, headers=headers, timeout=timeout)
-                response.raise_for_status()
-                data = response.json()
-                json_data_list.append(data)
-        else:
-            json_url = f"{base_url}/data.json"
-            response = session.get(json_url, headers=headers, timeout=timeout)
-            response.raise_for_status()
-            data = response.json()
-            json_data_list.append(data)
+        urls_to_fetch = [f"{base_url}/data.json"]
+
+    for url in urls_to_fetch:
+        response = session.get(url, headers=headers, timeout=timeout)
+        response.raise_for_status()
+        json_data_list.append(response.json())
 
     friends_data = merge_json_data(json_data_list)
 
@@ -378,7 +326,7 @@ def fetch_and_process_data(json_url, specific_RSS=[], count=5, expire_date=60):
     }
     
     print("数据处理完成")
-    print("总共有 %d 位朋友，其中 %d 位博客可访问，%d 位博客无法访问" % (total_friends, active_friends, error_friends))
+    print(f"总共有 {total_friends} 位朋友，其中 {active_friends} 位博客可访问，{error_friends} 位博客无法访问")
 
     return result, error_friends_info
 
