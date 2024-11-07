@@ -23,11 +23,11 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ISSUE_NUMBER: ${{ github.event.issue.number }}
         GITHUB_REPOSITORY: ${{ github.repository }}
-      run: python generator/detect_and_label.py
+      run: python friends/detect_and_label.py
 
     - name: Update links #更新
       run: |
-        python generator/main.py
+        python friends/main.py
     - name: Commit & Push
       uses: action-x/commit@v2.9
       with:

@@ -2,6 +2,7 @@ from datetime import datetime, timedelta, timezone
 from dateutil import parser
 import requests
 import feedparser
+from friend_circle_lite.get_conf import load_config
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 标准化的请求头
@@ -10,7 +11,7 @@ headers = {
 }
 
 timeout = (10, 15) # 连接超时和读取超时，防止requests接受时间过长
-
+config = load_config("./config.yaml")
 def format_published_time(time_str):
     """
     格式化发布时间为统一格式 YYYY-MM-DD HH:MM
@@ -257,6 +258,38 @@ def process_friend(friend, session, count, specific_RSS=[]):
             'articles': []
         }
 
+def extract_friend_info(content):
+    try:
+        name = content.get('title')
+        link = content.get('url')
+        avatar = content.get('avatar')
+        if all([name, link, avatar]):
+            return [name, link, avatar]
+    except Exception as e:
+        print(f"提取朋友信息失败: {str(e)}")
+        return None
+
+def merge_json_data(json_list):
+    friends_list = []
+    seen_links = set()
+    
+    for json_data in json_list:
+        if 'content' in json_data:  # 检查是否包含 'content'
+            for content in json_data['content']:
+                friend_info = extract_friend_info(content)
+                if friend_info:
+                    if friend_info[1] not in seen_links:
+                        friends_list.append(friend_info)
+                        seen_links.add(friend_info[1])
+        elif 'friends' in json_data:  # 如果存在 'friends' 键
+            for friend_info in json_data['friends']:
+                if friend_info[1] not in seen_links:
+                    friends_list.append(friend_info)
+                    seen_links.add(friend_info[1])
+
+    print(f"合并完成，总共提取到 {len(friends_list)} 位朋友信息")
+    return {'friends': friends_list}
+
 def fetch_and_process_data(json_url, specific_RSS=[], count=5, expire_date=60):
     """
     读取 JSON 数据并处理订阅信息，返回统计数据和文章信息。
@@ -271,26 +304,33 @@ def fetch_and_process_data(json_url, specific_RSS=[], count=5, expire_date=60):
     """
     session = requests.Session()
     
-    try:
+    # 获取 groups
+    groups = config['issues'].get('groups', [])
+    json_data_list = []
+    if json_url.startswith('http'):
         response = session.get(json_url, headers=headers, timeout=timeout)
-        friends_data = response.json()
-    except Exception as e:
-        print(f"无法获取该链接：{json_url} , 出现的问题为：{e}")
-        return None
-
-    # 处理两种数据格式
-    if 'friends' in friends_data:
-        friends = friends_data['friends']
-    elif 'content' in friends_data:
-        friends = [
-            [friend['title'], friend['url'], friend.get('avatar', '')]
-            for friend in friends_data['content']
-        ]
+        response.raise_for_status()
+        data = response.json()
+        json_data_list.append(data)
     else:
-        print("未知的数据格式")
-        return None
+        base_url = f"https://raw.githubusercontent.com/{json_url if '/' in json_url else fcl_repo}/output/v2"
+        if groups:
+            for group in groups:
+                group_url = f"{base_url}/{group}.json"
+                response = session.get(group_url, headers=headers, timeout=timeout)
+                response.raise_for_status()
+                data = response.json()
+                json_data_list.append(data)
+        else:
+            json_url = f"{base_url}/data.json"
+            response = session.get(json_url, headers=headers, timeout=timeout)
+            response.raise_for_status()
+            data = response.json()
+            json_data_list.append(data)
 
-    total_friends = len(friends)
+    friends_data = merge_json_data(json_data_list)
+
+    total_friends = len(friends_data['friends'])
     active_friends = 0
     error_friends = 0
     total_articles = 0
@@ -303,7 +343,7 @@ def fetch_and_process_data(json_url, specific_RSS=[], count=5, expire_date=60):
     with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_friend = {
             executor.submit(process_friend, friend, session, count, specific_RSS): friend
-            for friend in friends
+            for friend in friends_data['friends']
         }
         
         for future in as_completed(future_to_friend):

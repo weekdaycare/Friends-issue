@@ -15,16 +15,7 @@ config = load_config("./config.yaml")
 fcl_repo = os.getenv('FCL_REPO')
 if config["spider_settings"]["enable"]:
     print("爬虫已启用")
-    json_url = config['spider_settings']['json_url']
-    if json_url.startswith('http'):
-        pass
-    elif '/' in json_url:
-        json_url = f"https://raw.githubusercontent.com/{json_url}/output/v2/data.json"
-    elif not json_url:
-        json_url = f"https://raw.githubusercontent.com/{fcl_repo}/output/v2/data.json"
-    else:
-        print("错误：未提供有效的 json_url 或 FCL_REPO 环境变量")
-
+    json_url = config['spider_settings'].get('json_url','')
     article_count = config['spider_settings']['article_count']
     expire_date = config['spider_settings']['expire_date'] 
     specific_RSS = config['specific_RSS']
