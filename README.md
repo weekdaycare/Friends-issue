@@ -105,7 +105,17 @@ specific_RSS:
   #   url: "https://blog.imsyy.top/rss.xml"
 ```
 
-2. 打开 action 运行权限。
+2. 创建 5 个 issue 标签，分别是
+    
+   - `active`     友链添加成功
+   - `checklist`  部分条件未满足
+   - `suspend`    请及时添加本站友链
+   - `404`        您的网站打不开
+   - `subscribe`  欢迎订阅本博客
+  
+当然，如果你需要配置友链分组，你可以加上其他的标签，并在 `config.yaml` 中配置 `groups` 分组
+
+3. 打开 action 运行权限。
 
 其他配置可见 [Friend-Circle-Lite](https://github.com/willow-god/Friend-Circle-Lite) 文档
 
@@ -115,27 +125,15 @@ specific_RSS:
 
 1. 新建 issue 并按照模板要求填写提交。
 2. 当你的 issue 中包含邮箱地址时 action 会自动为该 issue 打上 `subscribe` 标签
-3. 等待 Action 运行完毕，检查 `output` 分支是否有 `/v2/data.json` 文件或`/v2/<组名>.json`，内容是否正确，如果正确则表示已经配置成功。
+3. 等待 Action 运行完毕，检查 `output` 分支是否有 `/v2/data.json` 文件或 `/v2/<组名>.json`， `page` 分支内容是否正确，如果正确则表示已经配置成功。
 
+## output 分支
 
-## IJGP 协议
+output 分支中包含两部分数据
 
-> 本项目基于 **[IJGP v1](https://github.com/topics/ijgp)** 协议，全称为 **Issues-Json Generator Protocol**
+1. 友链信息 `data.json` 或 `<分组名>.json`
 
-## output 输出
-
-| 字段 | 类型 | 用途 |
-| :-- | :-- | :-- |
-| title | string | 主标题 |
-| url | string | 主链接 |
-| avatar | string | 头像链接 |
-| description | string | 描述，建议200字以内 |
-| keywords | string | 关键词，英文逗号隔开 |
-| screenshot | string | 屏幕截图 |
-
-### 友链 json 输出格式
-
-```json data.json
+```json
 {
   "content": [
     {
@@ -149,9 +147,31 @@ specific_RSS:
 }
 ```
 
-### email 订阅输出格式
+| 字段 | 类型 | 用途 |
+| :-- | :-- | :-- |
+| title | string | 主标题 |
+| url | string | 主链接 |
+| avatar | string | 头像链接 |
+| description | string | 描述，建议200字以内 |
+| keywords | string | 关键词，英文逗号隔开 |
+| screenshot | string | 屏幕截图 |
 
-朋友圈数据
+2. 邮箱订阅信息 subscribe.json
+
+请注意，填写邮箱地址意味着你的邮箱对其他人也是公开的。
+
+```json
+{
+  "emails": [
+    "xxx@email.com",
+    ...
+  ]
+}
+```
+
+## page 分支
+
+包含静态页面与文件，你可以将其部署在 github page 或者 vercel cloudflare 等其他地方，具体使用请参考 Friend-Circle-Lite 官方文档。
 
 ```json all.json
 {
@@ -175,6 +195,10 @@ specific_RSS:
 }
 ```
 
-## page 输出
+## 从其他项目迁移
 
-包含静态页面与文件，你可以将其部署在 github page 或者 vercel cloudflare 等其他地方，具体使用请参考 Friend-Circle-Lite 官方文档。
+若你正在使用 [issues-json-generator](https://github.com/xaoxuu/issues-json-generator) ，你可以将 issue 迁移至你 fork 的仓库中。或者你可以更改配置使本仓库能够抓取你的 issue ，但是邮箱订阅需要在本仓库提 issue 申请。
+
+## IJGP 协议
+
+> 本项目基于 **[IJGP v1](https://github.com/topics/ijgp)** 协议，全称为 **Issues-Json Generator Protocol**
