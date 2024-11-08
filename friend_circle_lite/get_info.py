@@ -2,6 +2,7 @@ from datetime import datetime, timedelta, timezone
 from dateutil import parser
 import requests
 import feedparser
+import os
 from friend_circle_lite.get_conf import load_config
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
