@@ -12,6 +12,7 @@ headers = {
 
 timeout = (10, 15) # 连接超时和读取超时，防止requests接受时间过长
 config = load_config("./config.yaml")
+fcl_repo = os.getenv('FCL_REPO')
 def format_published_time(time_str):
     """
     格式化发布时间为统一格式 YYYY-MM-DD HH:MM
