@@ -2,7 +2,7 @@ name: Generator
 
 on:
   issues:
-    types: [opened, edited, labeled, unlabeled]
+    types: [opened, edited, deleted, labeled, unlabeled]
 
 jobs:
   build:
