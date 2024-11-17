@@ -33,7 +33,15 @@ def has_email(body):
     return re.search(email_pattern, body) is not None
 
 def main():
-    issue_data = get_issue_body(repo, issue_number)
+    try:
+        issue_data = get_issue_body(repo, issue_number)
+    except requests.exceptions.HTTPError as e:
+        if e.response.status_code == 410:
+            print(f"Issue #{issue_number} has been deleted. No further action needed.")
+            return
+        else:
+            raise
+            
     body = issue_data.get('body', '')
     labels = {label['name'] for label in issue_data.get('labels', [])}  # 使用集合提高查找效率
 
