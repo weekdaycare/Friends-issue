@@ -1,3 +1,4 @@
+import logging
 import requests
 import re
 from friend_circle_lite.get_info import check_feed, parse_feed
@@ -29,7 +30,7 @@ def extract_emails(api_url):
         response.raise_for_status()
         data = response.json()
     except Exception as e:
-        print(f"无法获取该链接：{api_url}\n出现的问题为：{e}")
+        logging.error(f"无法获取 GitHub issues 数据，错误信息: {e}")
         return None
 
     return emails
@@ -52,13 +53,13 @@ def get_latest_articles_from_link(url, count=5, last_articles_path="./rss_subscr
     session = requests.Session()
     feed_type, feed_url = check_feed(url, session)
     if feed_type == 'none':
-        print(f"无法访问 {url} 的 feed")
+        logging.error(f"无法获取 {url} 的文章数据")
         return None
 
     # 获取最新的文章数据
     latest_data = parse_feed(feed_url, session, count)
     latest_articles = latest_data['articles']
-    print(f"获取到的文章数量: {len(latest_articles)}")
+    logging.info(f"获取到的文章数量: {len(latest_articles)}")
 
     # 读取本地存储的上次的文章数据
     if os.path.exists(local_file):
@@ -66,13 +67,13 @@ def get_latest_articles_from_link(url, count=5, last_articles_path="./rss_subscr
             try:
                 last_data = json.load(file)
             except json.JSONDecodeError:
-                print("JSON 解码错误，使用空数据")
+                logging.error("JSON 解码错误，使用空数据")
                 last_data = {'articles': []}
     else:
         last_data = {'articles': []}
 
     last_articles = last_data.get('articles', [])
-    print(f"本地存储的文章数量: {len(last_articles)}")
+    logging.info(f"本地存储的文章数量: {len(last_articles)}")
 
     # 找到更新的文章
     updated_articles = []
@@ -82,13 +83,13 @@ def get_latest_articles_from_link(url, count=5, last_articles_path="./rss_subscr
         if article['link'] not in last_titles:
             updated_articles.append(article)
 
-    print(f"从 {url} 获取到 {len(latest_articles)} 篇文章，其中 {len(updated_articles)} 篇为新文章")
+    logging.info(f"从 {url} 获取到 {len(latest_articles)} 篇文章，其中 {len(updated_articles)} 篇为新文章")
 
     # 更新本地存储的文章数据
-    print(f"准备写入文件: {local_file}")
+    logging.info(f"准备写入文件: {local_file}")
     with open(local_file, 'w', encoding='utf-8') as file:
         json.dump({'articles': latest_articles}, file, ensure_ascii=False, indent=4)
-    print("文件写入成功")
+    logging.info("文件写入成功")
 
     # 如果有更新的文章，返回这些文章，否则返回 None
     return updated_articles if updated_articles else None
