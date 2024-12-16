@@ -66,6 +66,7 @@ def check_feed(blog_url, session):
         'rss': '/rss.xml',
         'feed': '/feed',
         'rss2': '/rss2.xml',
+        'rss3': '/rss.php',
         'feed2': '/feed.xml',
         'feed3': '/feed/',
         'index': '/index.xml'

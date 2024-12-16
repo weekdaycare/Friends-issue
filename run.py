@@ -81,7 +81,7 @@ if config["rss_subscribe"]["enable"]:
         logging.info("无未进行推送的新文章")
     else:
         mail_url = "https://raw.githubusercontent.com/{fcl_repo}/output/v2/subscribe.json"
-        logging.info("正在从 {github_api_url} 中获取订阅信息".format(github_api_url=github_api_url))
+        logging.info("正在从 {mail_url} 中获取订阅信息".format(mail_url=mail_url))
         email_list = extract_emails(mail_url)
         if email_list == None:
             logging.info("无邮箱列表，请检查您的订阅列表是否有订阅者或订阅格式是否正确")
