@@ -29,11 +29,10 @@ def extract_emails(api_url):
         response = requests.get(api_url, headers=headers)
         response.raise_for_status()
         data = response.json()
+        return data
     except Exception as e:
         logging.error(f"无法获取 GitHub issues 数据，错误信息: {e}")
         return None
-
-    return emails
 
 def get_latest_articles_from_link(url, count=5, last_articles_path="./rss_subscribe/last_articles.json"):
     """
