@@ -57,7 +57,6 @@ def email_sender(
     for attempt in range(retries):
         try:
             with smtplib.SMTP(smtp_server, port) as server:
-                server.set_debuglevel(1)
                 server.ehlo()
                 if use_tls:
                     server.starttls()  # 启动安全模式
