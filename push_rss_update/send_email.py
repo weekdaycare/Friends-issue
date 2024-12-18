@@ -57,12 +57,13 @@ def email_sender(
     for attempt in range(retries):
         try:
             with smtplib.SMTP(smtp_server, port) as server:
+                server.ehlo()
                 if use_tls:
                     server.starttls()  # 启动安全模式
                 server.login(sender_email, password)
                 server.sendmail(sender_email, target_emails, msg.as_string())
                 logging.info(f'邮件已成功发送到 {", ".join(target_emails)}')
-                return  # 成功发送后退出
+                break  # 成功发送后退出
         except smtplib.SMTPException as e:
             logging.error(f'邮件发送失败，目标地址: {", ".join(target_emails)}，执行第 {attempt + 1} 重试')
             if attempt < retries - 1:
