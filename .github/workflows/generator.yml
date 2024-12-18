@@ -2,7 +2,7 @@ name: Generator
 
 on:
   issues:
-    types: [opened, edited, deleted, labeled, unlabeled]
+    types: [edited, deleted, labeled, unlabeled]
 
 jobs:
   build:
@@ -11,9 +11,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Set up Python #安装python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.8
+        python-version: 3.12.8
     - name: Install requirements #安装requests
       run: |
         pip install -r requirements.txt
