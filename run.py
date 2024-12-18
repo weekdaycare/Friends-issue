@@ -57,11 +57,7 @@ if config["rss_subscribe"]["enable"]:
     logging.info("RSS 订阅推送已启用")
 
     # 提取 github_username 和 github_repo
-    if fcl_repo:
-        github_username, github_repo = fcl_repo.split('/')
-    else:
-        github_username = str(config["rss_subscribe"]["github_username"]).strip()
-        github_repo = str(config["rss_subscribe"]["github_repo"]).strip()
+    github_username, github_repo = fcl_repo.split('/')
     # 输出 github_username 和 github_repo
     logging.info("github_username: {github_username}".format(github_username=github_username))
     logging.info("github_repo: {github_repo}".format(github_repo=github_repo))

@@ -4,6 +4,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from jinja2 import Environment, FileSystemLoader
 import os
+import time
 
 def email_sender(
     target_email, 
@@ -16,6 +17,8 @@ def email_sender(
     template_path=None,
     template_data=None,
     use_tls=True,
+    retries=3,
+    delay=3,
     ):
     """
     发送电子邮件。
@@ -31,6 +34,8 @@ def email_sender(
     template_path (str): HTML 模板文件路径。默认为 None。
     template_data (dict): 渲染模板的数据。默认为 None。
     use_tls (bool): 是否使用 TLS 加密。默认为 True。
+    retries (int): 邮件发送失败时的重试次数，默认为 3。
+    delay (int): 重试之间的延迟时间（秒），默认为 3。
     """
     # 创建 MIME 对象
     msg = MIMEMultipart()
@@ -49,15 +54,21 @@ def email_sender(
         msg.attach(MIMEText(body, 'plain'))
 
     # 连接到 SMTP 服务器并发送邮件
-    try:
-        with smtplib.SMTP(smtp_server, port) as server:
-            if use_tls:
-                server.starttls()  # 启动安全模式
-            server.login(sender_email, password)
-            server.sendmail(sender_email, target_email, msg.as_string())
-            print(f'邮件已发送到 {target_email}')
-    except Exception as e:
-        logging.error(f'邮件发送失败，目标地址: {target_email}，错误信息: {e}')
+    for attempt in range(retries):
+        try:
+            with smtplib.SMTP(smtp_server, port) as server:
+                if use_tls:
+                    server.starttls()  # 启动安全模式
+                server.login(sender_email, password)
+                server.sendmail(sender_email, target_email, msg.as_string())
+                logging.info(f'邮件已成功发送到 {target_email}')
+                return  # 成功发送后退出
+        except smtplib.SMTPException as e:
+            logging.error(f'邮件发送失败，目标地址: {target_email}，错误信息: {e}')
+            if attempt < retries - 1:
+                time.sleep(delay)  # 等待后重试
+            else:
+                logging.error(f'所有重试均失败，未能发送邮件到 {target_email}')
 
 def send_emails(emails, sender_email, smtp_server, port, password, subject, body, template_path=None, template_data=None, use_tls=True):
     """
