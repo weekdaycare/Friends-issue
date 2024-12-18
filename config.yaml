@@ -62,7 +62,7 @@ rss_subscribe:
 smtp:
   email: comment@weekdaycare.cn
   server: smtp.feishu.cn
-  port: 587
+  port: 465
   use_tls: true
 
 # 特殊RSS地址指定，可以置空但是不要删除！
