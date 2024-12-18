@@ -96,7 +96,7 @@ if config["rss_subscribe"]["enable"]:
             }
             
             send_emails(
-                emails=email_list["emails"],
+                target_emails=email_list["emails"],
                 sender_email=email,
                 smtp_server=server,
                 port=port,
