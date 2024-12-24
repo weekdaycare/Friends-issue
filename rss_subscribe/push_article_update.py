@@ -99,7 +99,7 @@ def get_latest_articles_from_link(url, count=5, last_articles_path="./rss_subscr
             json.dump({'articles': latest_articles, 'fail_count': fail_count}, file, ensure_ascii=False, indent=4)
         logging.info("文件写入成功")
     else:
-                logging.info(f"从 {url} 获取到文章数量为0的次数: {zero_count}，未达到更新阈值，不更新本地存储")
+        logging.info(f"从 {url} 获取到文章数量为0的次数: {fail_count}，未达到更新阈值，不更新本地存储")
 
     # 如果有更新的文章，返回这些文章，否则返回 None
     return updated_articles if updated_articles else None
