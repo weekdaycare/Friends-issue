@@ -67,11 +67,12 @@ def get_latest_articles_from_link(url, count=5, last_articles_path="./rss_subscr
                 last_data = json.load(file)
             except json.JSONDecodeError:
                 logging.error("JSON 解码错误，使用空数据")
-                last_data = {'articles': []}
+                last_data = {'articles': [], 'fail_count': 0}
     else:
-        last_data = {'articles': []}
+        last_data = {'articles': [], 'fail_count': 0}
 
     last_articles = last_data.get('articles', [])
+    fail_count = last_data.get('fail_count', 0)
     logging.info(f"本地存储的文章数量: {len(last_articles)}")
 
     # 找到更新的文章
@@ -84,11 +85,21 @@ def get_latest_articles_from_link(url, count=5, last_articles_path="./rss_subscr
 
     logging.info(f"从 {url} 获取到 {len(latest_articles)} 篇文章，其中 {len(updated_articles)} 篇为新文章")
 
-    # 更新本地存储的文章数据
-    logging.info(f"准备写入文件: {local_file}")
-    with open(local_file, 'w', encoding='utf-8') as file:
-        json.dump({'articles': latest_articles}, file, ensure_ascii=False, indent=4)
-    logging.info("文件写入成功")
+    # 更新 fail_count 逻辑
+    if len(latest_articles) == 0:
+        fail_count += 1
+    else:
+        fail_count = 0
+
+    # 判断是否更新本地存储
+    if fail_count > 3 or len(latest_articles) > 0:
+        # 更新本地存储的文章数据
+        logging.info(f"准备写入文件: {local_file}")
+        with open(local_file, 'w', encoding='utf-8') as file:
+            json.dump({'articles': latest_articles, 'fail_count': fail_count}, file, ensure_ascii=False, indent=4)
+        logging.info("文件写入成功")
+    else:
+                logging.info(f"从 {url} 获取到文章数量为0的次数: {zero_count}，未达到更新阈值，不更新本地存储")
 
     # 如果有更新的文章，返回这些文章，否则返回 None
     return updated_articles if updated_articles else None
