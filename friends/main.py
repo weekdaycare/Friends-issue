@@ -55,13 +55,13 @@ def fetch_issues(repo, parameter, sort, label=None, data_pool=None, email_list=N
 
             github = request.get_data(url)
             soup = BeautifulSoup(github, 'html.parser')
-            main_content = soup.find('div', {'aria-label': 'Issues'})
+            main_content = soup.find_all('ul', {'class': 'ListView-module__ul--vMLEZ'})
 
             if not main_content:
                 print('> End of issues')
                 break
 
-            linklist = main_content.find_all('a', {'class': 'Link--primary'})
+            linklist = main_content[0].find_all('a', {'class': 'Title-module__anchor--SyQM6'})
             if not linklist:
                 print('> End of links')
                 break
