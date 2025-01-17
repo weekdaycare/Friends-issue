@@ -12,7 +12,6 @@ outputdir = version  # 输出文件结构变化时，更新输出路径版本
 filenames = []
 json_pool = []
 email_list = []
-baselink = 'https://github.com/'
 
 def mkdir(path):
     if not os.path.exists(path):
@@ -21,53 +20,48 @@ def mkdir(path):
 
 def parse_issue_links(issues_page, data_pool=None, email_list=None):
     issues_soup = BeautifulSoup(issues_page, 'html.parser')
-    if data_pool is not None:
-        try:
+    try:
+        if data_pool is not None:
             issues_linklist = issues_soup.find_all('pre')
             source = issues_linklist[0].text
             if "{" in source:
                 source = json.loads(source)
                 data_pool.append(source)
-        except Exception:
-            pass
 
-    if email_list is not None:
-        try:
+        if email_list is not None:
             mail_link = issues_soup.find('a', href=lambda x: x and x.startswith('mailto:'))
             if mail_link:
                 mail_value = mail_link['href'].replace('mailto:', '')
                 email_list.append(mail_value)
-        except Exception:
-            pass
+    except Exception:
+        pass
 
 def fetch_issues(repo, parameter, sort, label=None, data_pool=None, email_list=None):
     with ThreadPoolExecutor() as executor:
         for number in range(1, 100):
             print('Page:', number)
-            url = f'https://github.com/{repo}/issues?page={number}&q=is%3Aopen'
+            url = f'https://api.github.com/repos/{repo}/issues'
+            params = {
+                'state': 'open',
+                'page': number,
+                'per_page': 30
+            }
             if parameter:
-                url += parameter
+                params['labels'] = parameter
             if sort:
-                url += f'+sort%3A{sort}'
+                params['sort'] = sort
             if label:
-                url += f'+label%3A{label}'
+                params['labels'] = label
             print('Parsing:', url)
 
-            github = request.get_data(url)
-            soup = BeautifulSoup(github, 'html.parser')
-            main_content = soup.find_all('ul', {'class': 'ListView-module__ul--vMLEZ'})
+            issues = request.get_json(url, params)
 
-            if not main_content:
+            if not issues:
                 print('> End of issues')
                 break
 
-            linklist = main_content[0].find_all('a', {'class': 'Title-module__anchor--SyQM6'})
-            if not linklist:
-                print('> End of links')
-                break
-
-            future_to_url = {executor.submit(request.get_data, baselink + item['href']): item for item in linklist}
-            for future in as_completed(future_to_url):
+            future_to_issue = {executor.submit(request.get_data, issue['html_url']): issue for issue in issues}
+            for future in as_completed(future_to_issue):
                 issues_page = future.result()
                 if issues_page:
                     parse_issue_links(issues_page, data_pool, email_list)
@@ -84,7 +78,7 @@ def github_issues(json_pool):
     if not filter["groups"]:
         data_pool = []
         filenames.append("data")
-        parameter = f'+label%3A{filter["label"]}' if filter["label"] else ''
+        parameter = filter["label"] if filter["label"] else ''
         fetch_issues(filter["repo"], parameter, filter["sort"], data_pool=data_pool)
         json_pool.append(data_pool)
     else:
@@ -92,7 +86,7 @@ def github_issues(json_pool):
             print('Start of group:', group)
             data_pool = []
             filenames.append(group)
-            parameter = f'+label%3A{filter["label"]}' if filter["label"] else ''
+            parameter = filter["label"] if filter["label"] else ''
             fetch_issues(filter["repo"], parameter, filter["sort"], label=group, data_pool=data_pool)
             json_pool.append(data_pool)
             print("End of group:", group)
