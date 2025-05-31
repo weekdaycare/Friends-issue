@@ -1,6 +1,7 @@
 import logging
 from datetime import datetime, timedelta, timezone
 from dateutil import parser
+from zoneinfo import ZoneInfo
 import requests
 import feedparser
 import os
