@@ -12,7 +12,7 @@ from friend_circle_lite.get_info import (
 from friend_circle_lite.get_conf import load_config
 from rss_subscribe.push_article_update import (
     get_latest_articles_from_link,
-    extract_emails_from_issues
+    extract_emails
 )
 from push_rss_update.send_email import send_emails
 
