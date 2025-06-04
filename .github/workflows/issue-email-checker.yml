@@ -12,7 +12,7 @@ jobs:
         with:
           ref: main
 
-      - uses: weekdaycare/Issue-email-checker@v1.0
+      - uses: weekdaycare/Issue-email-checker@main
         with:
           issue_state: open
         env:
