@@ -17,7 +17,7 @@ jobs:
           ref: main
 
       - name: Send Blog Update Email
-        uses: weekdaycare/eamil-pusher@main
+        uses: weekdaycare/email-pusher@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
