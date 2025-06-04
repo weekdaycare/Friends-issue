@@ -18,19 +18,31 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: prepare worktree
+      - name: Ensure output branch exists
+        run: |
+          if ! git ls-remote --exit-code --heads origin output; then
+            echo "output branch does not exist, creating..."
+            git checkout --orphan output
+            git rm -rf .
+            echo '{}' > .init.json
+            git add .init.json
+            git commit -m "Initialize output branch"
+            git push origin output
+            git checkout main
+          else
+            echo "output branch exists"
+          fi
+
+      - name: Save subscribe.json
+        run: |
+          cp subscribe.json /tmp/subscribe.json
+
+      - name: Switch to output branch and update file
         run: |
           git fetch origin output
-          git worktree add output-worktree output
-
-      - name: mv subscribe.json
-        run: |
-          mkdir -p output-worktree/v2
-          cp subscribe.json output-worktree/v2/subscribe.json
-
-      - name: push commit
-        run: |
-          cd output-worktree
+          git checkout output
+          mkdir -p v2
+          cp /tmp/subscribe.json v2/subscribe.json
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add v2/subscribe.json
