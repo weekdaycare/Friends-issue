@@ -20,13 +20,13 @@ jobs:
         uses: weekdaycare/email-pusher@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }} 
         with:
           rss_url: "https://weekdaycare.cn/atom.xml"
           smtp_server: "smtp.feishu.cn"
           smtp_port: 587
           sender_email: "comment@weekdaycare.cn"
           smtp_tls: true
-          smtp_password: ${{ secrets.SMTP_PASSWORD }}
           subscribe_json_url: "https://raw.githubusercontent.com/weekdaycare/Friends-issue/refs/heads/output/v2/subscribe.json"
           website_title: "星日语"
           website_icon: "https://weekdaycare.cn/asset/avatar.svg"
