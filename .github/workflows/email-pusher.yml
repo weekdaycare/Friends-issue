@@ -1,4 +1,4 @@
-name: Feed Posts Parser
+name: Email_pusher
 
 on:
   schedule:
@@ -33,16 +33,16 @@ jobs:
       - name: prepare worktree
         run: |
           git fetch origin output
-          git worktree add output output
+          git worktree add output-worktree output
 
       - name: mv last_articles.json
         run: |
-          mkdir -p output/v2
-          cp last_articles.json output/v2/last_articles.json
+          mkdir -p output-worktree/v2
+          cp last_articles.json output-worktree/v2/last_articles.json
 
       - name: push commit
         run: |
-          cd output
+          cd output-worktree
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add v2/last_articles.json
