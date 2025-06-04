@@ -27,7 +27,6 @@ jobs:
           subscribe_json_url: "https://raw.githubusercontent.com/weekdaycare/Friends-issue/output/v2/subscribe.json"
           website_title: "星日语"
           website_icon: "https://weekdaycare.cn/asset/avatar.svg"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           smtp_password: ${{ secrets.SMTP_PASSWORD }}
 
       - name: Save last_articles.json
@@ -45,4 +44,3 @@ jobs:
           git add v2/last_articles.json
           git commit -m "Update last_articles.json [bot]" || echo "No changes to commit"
           git push origin HEAD:output
-          git checkout main  # 可选，切回主分支
