@@ -38,10 +38,11 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
       - name: Commit and Push to output branch
         run: |
           git fetch origin output || true
-          git checkout -B output
-          git add --all
+          git checkout output
+          git add v2/data.json
           git commit -m "Update data from issues" || echo "No changes to commit"
-          git push -f origin output
+          git push origin HEAD:output
