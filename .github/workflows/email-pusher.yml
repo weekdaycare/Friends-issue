@@ -18,9 +18,6 @@ jobs:
 
       - name: Send Blog Update Email
         uses: weekdaycare/email-pusher@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }} 
         with:
           rss_url: "https://weekdaycare.cn/atom.xml"
           smtp_server: "smtp.feishu.cn"
@@ -31,6 +28,8 @@ jobs:
           website_title: "星日语"
           website_icon: "https://weekdaycare.cn/asset/avatar.svg"
           repo: ${{ github.repository }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          smtp_password: ${{ secrets.SMTP_PASSWORD }}
 
       - name: Save last_articles.json
         run: |
