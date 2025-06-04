@@ -1,0 +1,50 @@
+name: Feed Posts Parser
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+
+jobs:
+  email-pusher:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Send Blog Update Email
+        uses: weekdaycare/eamil-pusher@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          rss_url: "https://weekdaycare.cn/atom.xml"
+          smtp_server: "smtp.feishu.cn"
+          smtp_port: 587
+          sender_email: "comment@weekdaycare.cn"
+          smtp_tls: true
+          smtp_password: ${{ secrets.SMTP_PASSWORD }}
+          subscribe_json_url: "https://raw.githubusercontent.com/weekdaycare/Friends-issue/refs/heads/output/v2/subscribe.json"
+          website_title: "星日语"
+          website_icon: "https://weekdaycare.cn/asset/avatar.svg"
+          repo: ${{ github.repository }}
+
+      - name: prepare worktree
+        run: |
+          git fetch origin output
+          git worktree add output output
+
+      - name: mv last_articles.json
+        run: |
+          mkdir -p output/v2
+          cp last_articles.json output/v2/last_articles.json
+
+      - name: push commit
+        run: |
+          cd output
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add v2/last_articles.json
+          git commit -m "Update last_articles.json [bot]" || echo "No changes to commit"
+          git push origin HEAD:output
