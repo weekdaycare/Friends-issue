@@ -605,7 +605,7 @@
       "descr": "做一个普普通通的人.",
       "icon": "https://gcore.jsdelivr.net/gh/zykjofficial/zykjofficial.github.io@master/img/avatar.png",
       "snapshot": "https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://zykj.js.org",
-      "feed": "",
+      "feed": "https://zykj.js.org/atom.xml",
       "issue_number": 36,
       "labels": [
         {
