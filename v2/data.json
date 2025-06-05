@@ -120,7 +120,7 @@
       "description": "Far from flawless, always reckless 💜",
       "icon": "https://weavatar.com/avatar/2776070fbf6cf5174f64ece2b182f92b55f4a80dedf18382070f9823e8a4c136",
       "snapshot": "https://www.flyalready.com/asset/images/screenshot.png",
-      "feed": "",
+      "feed": "https://www.flyalready.com/atom.xml",
       "issue_number": 7,
       "labels": [
         {
@@ -129,6 +129,13 @@
           "hue": 92,
           "saturation": 80,
           "lightness": 73
+        },
+        {
+          "name": "subscribe",
+          "color": "7DDABF",
+          "hue": 163,
+          "saturation": 56,
+          "lightness": 67
         }
       ]
     },
@@ -654,7 +661,7 @@
       "keywords": "",
       "icon": "https://img.onmicrosoft.cn/Avatar.jpg",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://icodeq.com/feed.xml",
       "issue_number": 41,
       "labels": [
         {
@@ -673,7 +680,7 @@
       "keywords": "",
       "icon": "https://pic1.imgdb.cn/item/6342621016f2c2beb146c2ed.jpg",
       "snapshot": "https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg",
-      "feed": "",
+      "feed": "https://xaoxuu.com/atom.xml",
       "issue_number": 43,
       "labels": [
         {
