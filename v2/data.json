@@ -7,17 +7,9 @@
       "description": "",
       "icon": "https://avatars.githubusercontent.com/u/186286899?v=4",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://ayellowdogsays.github.io/atom.xml",
       "issue_number": 52,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "浩瀚星河",
@@ -25,42 +17,9 @@
       "description": "代码，日常，生活",
       "icon": "https://haohanxinghe.com/assets/images/avatar.jpg",
       "snapshot": "https://image.codepzj.cn/image/202410022148697.png",
-      "feed": "",
+      "feed": "https://haohanxinghe.com/atom.xml",
       "issue_number": 47,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
-    },
-    {
-      "title": "星日语",
-      "url": "https://weekdaycare.cn",
-      "description": "星语日点灯",
-      "icon": "https://weekdaycare.cn/asset/avatar.svg",
-      "snapshot": "",
-      "feed": "",
-      "issue_number": 6,
-      "labels": [
-        {
-          "name": "404",
-          "color": "d73a4a",
-          "hue": 354,
-          "saturation": 66,
-          "lightness": 54
-        },
-        {
-          "name": "subscribe",
-          "color": "7DDABF",
-          "hue": 163,
-          "saturation": 56,
-          "lightness": 67
-        }
-      ]
+      "labels": []
     },
     {
       "title": "子书承宇",
@@ -68,34 +27,18 @@
       "description": "霰雪纷其无垠兮，云霏霏而承宇",
       "icon": "https://hp-l.github.io/headimg/my_avatar.jpg",
       "snapshot": "https://hp-l.github.io/headimg/blog_screenshot.png",
-      "feed": "",
+      "feed": "https://zishu.is-cool.dev/atom.xml",
       "issue_number": 3,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "木生懒得写博客",
       "url": "https://blog.lsy223622.com/",
       "icon": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://blog.lsy223622.com/feed",
       "issue_number": 4,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "挽君博客",
@@ -104,15 +47,7 @@
       "snapshot": "",
       "feed": "",
       "issue_number": 5,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "宇宙尽头的餐馆",
@@ -123,13 +58,6 @@
       "feed": "https://www.flyalready.com/atom.xml",
       "issue_number": 7,
       "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        },
         {
           "name": "subscribe",
           "color": "7DDABF",
@@ -144,17 +72,9 @@
       "url": "https://blog.hzchu.top",
       "icon": "https://blog.hzchu.top/img/avatar.webp",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://blog.hzchu.top/atom.xml",
       "issue_number": 8,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "Chenli",
@@ -163,32 +83,7 @@
       "snapshot": "",
       "feed": "",
       "issue_number": 9,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
-    },
-    {
-      "title": "苏末了",
-      "url": "https://5mg.fun/",
-      "icon": "https://s2.loli.net/2023/10/20/uL7sXlj2SvtRAne.jpg",
-      "snapshot": "",
-      "feed": "",
-      "issue_number": 12,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "十方玄机",
@@ -197,49 +92,16 @@
       "snapshot": "",
       "feed": "",
       "issue_number": 10,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "海底捞里没有鱼",
       "url": "https://smileszh.cn",
       "icon": "https://bu.dusays.com/2023/06/10/648499e1299d0.jpg",
       "snapshot": "https://bu.dusays.com/2023/06/23/64948455a7895.png",
-      "feed": "",
+      "feed": "https://www.smileszh.cn/atom.xml",
       "issue_number": 11,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
-    },
-    {
-      "title": "44maker",
-      "url": "https://44maker.github.io/",
-      "icon": "https://fc.sinaimg.cn/large/007QiKhggy1hhi9ont0gtj30dw0dwjy1.jpg",
-      "snapshot": "",
-      "feed": "",
-      "issue_number": 13,
-      "labels": [
-        {
-          "name": "checklist",
-          "color": "356DFC",
-          "hue": 223,
-          "saturation": 97,
-          "lightness": 60
-        }
-      ]
+      "labels": []
     },
     {
       "title": "Schi2oid",
@@ -248,50 +110,16 @@
       "snapshot": "",
       "feed": "",
       "issue_number": 14,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "Cris.Q",
       "url": "https://crisq.top",
       "icon": "https://crisq.top/avatar.webp",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://crisq.top/index.xml",
       "issue_number": 15,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
-    },
-    {
-      "title": "REAI",
-      "url": "http://blog.reaicc.com",
-      "descr": "热爱漫无边际，生活自有分寸！",
-      "icon": "https://q1.qlogo.cn/g?b=qq&nk=2877406366&s=640",
-      "snapshot": "",
-      "feed": "",
-      "issue_number": 17,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "钟意博客",
@@ -299,17 +127,9 @@
       "descr": "感谢你的阅读.",
       "icon": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp",
       "snapshot": "https://upyun.thatcdn.cn/hexo/stellar/image/shot.webp",
-      "feed": "",
+      "feed": "https://blog.thatcoder.cn/atom.xml",
       "issue_number": 19,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "一蓑烟雨",
@@ -317,53 +137,9 @@
       "descr": "竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。",
       "icon": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://easyf12.top/atom.xml",
       "issue_number": 20,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
-    },
-    {
-      "title": "CAYZLH",
-      "url": "https://www.cayzlh.com",
-      "descr": "CODE IS POETRY",
-      "icon": "https://jsd.cdn.zzko.cn/gh/cayzlh/psychic-potato@master/image/shark.jpg",
-      "snapshot": "https://jsd.cdn.zzko.cn/gh/cayzlh/git-img-repository@master/uPic/0A1dao.png",
-      "feed": "",
-      "issue_number": 21,
-      "labels": [
-        {
-          "name": "checklist",
-          "color": "356DFC",
-          "hue": 223,
-          "saturation": 97,
-          "lightness": 60
-        }
-      ]
-    },
-    {
-      "title": "Quantum Bit",
-      "url": "https://www.eula.club/",
-      "descr": "Never stop searching, even if only for a brief flash of light.",
-      "icon": "https://www.eula.club/images/avatar.webp",
-      "snapshot": "",
-      "feed": "",
-      "issue_number": 22,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "DSRBLOG",
@@ -373,15 +149,7 @@
       "snapshot": "",
       "feed": "",
       "issue_number": 23,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "姚远",
@@ -389,17 +157,9 @@
       "descr": "隐约雷鸣，阴霾天空，但盼风雨来，能留你在此。",
       "icon": "https://yaoyuan.vip/images/Avatar.jpg",
       "snapshot": "A Vegetable Student",
-      "feed": "",
+      "feed": "https://yaoyuan.vip/atom.xml",
       "issue_number": 25,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "LanYunのBlog",
@@ -407,17 +167,9 @@
       "descr": "Share Technology.",
       "icon": "https://lanyundev.com/img/logo.jpg.webp",
       "snapshot": "https://lanyundev.com/img/SiteScreenshot.png.webp",
-      "feed": "",
+      "feed": "https://lanyundev.com/atom.xml",
       "issue_number": 26,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "傲慢或香橙",
@@ -425,17 +177,9 @@
       "descr": "随知修行乃当务之急，然怠惰度日至今",
       "icon": "https://fastly.jsdelivr.net/gh/xiangshu233/cdn@2.8/img/custom/touxiang.jpg",
       "snapshot": "https://image.thum.io/get/https://www.xiangshu233.cn",
-      "feed": "",
+      "feed": "https://www.xiangshu233.cn/atom.xml",
       "issue_number": 30,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "Cubik的小站",
@@ -443,17 +187,9 @@
       "descr": "RECOMMENDED BY DR.CREATIVE",
       "icon": "https://bu.dusays.com/2022/11/10/636c837643829.webp",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://www.cubik65536.top/atom.xml",
       "issue_number": 28,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "Felix Chen",
@@ -461,17 +197,9 @@
       "descr": "所见一切皆是奇迹",
       "icon": "https://blog.snowflake.zone/assets/profile.jpg",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://blog.snowflake.zone/friends/atom.xml",
       "issue_number": 27,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "Colsrch",
@@ -479,53 +207,9 @@
       "descr": "愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。",
       "icon": "https://bu.dusays.com/2022/02/23/cb173cbdcc7c6.png",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://colsrch.cn/atom.xml",
       "issue_number": 29,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
-    },
-    {
-      "title": "Emmilia",
-      "url": "https://kitel.top/",
-      "descr": "",
-      "icon": "https://cdn.kitel.top/img/202211040935099.jpg",
-      "snapshot": "",
-      "feed": "",
-      "issue_number": 31,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
-    },
-    {
-      "title": "PluginsKers",
-      "url": "https://www.i5res.com/",
-      "descr": "凡心所向，素履所往 🌊",
-      "icon": "https://fastly.i5res.com/gh/pluginskers/cdn/2021/20210427202755.jpg",
-      "snapshot": "https://fastly.i5res.com/gh/pluginskers/cdn/2022/20221101210029.png",
-      "feed": "",
-      "issue_number": 32,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "SkyReeves",
@@ -533,17 +217,9 @@
       "descr": "把生命浪费在美好的事物上",
       "icon": "https://img.skyreeves.com/main/avatar96.gif",
       "snapshot": "https://img.skyreeves.com/sites/截屏2022-11-07-19.23.28.png",
-      "feed": "",
+      "feed": "https://skyreeves.com/atom.xml",
       "issue_number": 33,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "Achuan-2",
@@ -551,17 +227,9 @@
       "descr": "一条没有故事的巛",
       "icon": "https://www.achuan-2.top/assets/ico/Achuan.jpg",
       "snapshot": "https://fastly.jsdelivr.net/gh/Achuan-2/Picbed@pic/assets/1666805527244Snipaste_2022-10-27_01-31-59.png",
-      "feed": "",
+      "feed": "https://www.achuan-2.top/atom.xml",
       "issue_number": 34,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "咖啡冰河",
@@ -569,17 +237,9 @@
       "descr": "无感而发，随性而谈",
       "icon": "https://s1.ax1x.com/2022/05/28/XuW2h6.png",
       "snapshot": "",
-      "feed": "",
+      "feed": "https://blog.mysto.cyou/index.xml",
       "issue_number": 35,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "DearXuan",
@@ -587,17 +247,9 @@
       "descr": "编程,算法",
       "icon": "https://cdn.dearxuan.com/webinfo/logo_rect.png",
       "snapshot": "https://pic.dearxuan.com/webinfo/screenshot.jpg",
-      "feed": "",
+      "feed": "https://static.dearxuan.com/atom.xml",
       "issue_number": 37,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "ZYKJ's Blog",
@@ -607,15 +259,7 @@
       "snapshot": "https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://zykj.js.org",
       "feed": "https://zykj.js.org/atom.xml",
       "issue_number": 36,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "shixiaocaia",
@@ -626,15 +270,7 @@
       "snapshot": "https://bu.dusays.com/2022/09/07/631860d13dc54.png ",
       "feed": "https://shixiaocaia.fun/index.xml",
       "issue_number": 39,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "Zkeq の Coding 日志",
@@ -645,15 +281,7 @@
       "snapshot": "",
       "feed": "https://icodeq.com/feed.xml",
       "issue_number": 41,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     },
     {
       "title": "xaoxuu",
@@ -664,15 +292,7 @@
       "snapshot": "https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg",
       "feed": "https://xaoxuu.com/atom.xml",
       "issue_number": 43,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
+      "labels": []
     }
   ]
 }
