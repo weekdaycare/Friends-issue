@@ -618,31 +618,13 @@
       ]
     },
     {
-      "title": "小康博客",
-      "url": "https://www.antmoe.com/",
-      "descr": "一个收藏回忆与分享技术的地方！",
-      "icon": "https://cdn.jsdelivr.net/npm/kang-static@latest/avatar.jpg",
-      "snapshot": "",
-      "feed": "",
-      "issue_number": 40,
-      "labels": [
-        {
-          "name": "active",
-          "color": "B6F184",
-          "hue": 92,
-          "saturation": 80,
-          "lightness": 73
-        }
-      ]
-    },
-    {
       "title": "shixiaocaia",
       "url": "https://shixiaocaia.fun",
       "descr": "去做吧，反正都会后悔。",
       "keywords": "生活向，个人记录博客",
       "icon": "https://bu.dusays.com/2022/12/25/63a806f74cf5e.jpg",
       "snapshot": "https://bu.dusays.com/2022/09/07/631860d13dc54.png ",
-      "feed": "",
+      "feed": "https://shixiaocaia.fun/index.xml",
       "issue_number": 39,
       "labels": [
         {
