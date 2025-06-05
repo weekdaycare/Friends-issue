@@ -11,10 +11,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout repository
+      - name: Checkout output branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: output
 
       - name: Send Blog Update Email
         uses: weekdaycare/email-pusher@main
@@ -29,16 +29,10 @@ jobs:
           website_icon: "https://weekdaycare.cn/asset/avatar.svg"
           smtp_password: ${{ secrets.SMTP_PASSWORD }}
 
-      - name: Save last_articles.json
-        run: |
-          cp last_articles.json /tmp/last_articles.json
-
       - name: Switch to output branch and update file
         run: |
-          git fetch origin output
-          git checkout output
           mkdir -p v2
-          cp /tmp/last_articles.json v2/last_articles.json
+          cp last_articles.json v2/last_articles.json
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add v2/last_articles.json

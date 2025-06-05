@@ -8,9 +8,10 @@ jobs:
   email-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout output branch
+        uses: actions/checkout@v4
         with:
-          ref: main
+          ref: output
 
       - uses: weekdaycare/Issue-email-checker@main
         with:
@@ -18,31 +19,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Ensure output branch exists
-        run: |
-          if ! git ls-remote --exit-code --heads origin output; then
-            echo "output branch does not exist, creating..."
-            git checkout --orphan output
-            git rm -rf .
-            echo '{}' > .init.json
-            git add .init.json
-            git commit -m "Initialize output branch"
-            git push origin output
-            git checkout main
-          else
-            echo "output branch exists"
-          fi
-
-      - name: Save subscribe.json
-        run: |
-          cp subscribe.json /tmp/subscribe.json
-
       - name: Switch to output branch and update file
         run: |
-          git fetch origin output
-          git checkout output
           mkdir -p v2
-          cp /tmp/subscribe.json v2/subscribe.json
+          cp subscribe.json v2/subscribe.json
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add v2/subscribe.json

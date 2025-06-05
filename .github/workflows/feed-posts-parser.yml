@@ -12,8 +12,11 @@ jobs:
       issues: write
       contents: write
     steps:
-      - name: Checkout repository
+      - name: Checkout output branch
         uses: actions/checkout@v4
+        with:
+          ref: output
+
       - name: Run Feed Post Parser
         uses: weekdaycare/feed-posts-parser@main
         env:
@@ -42,8 +45,6 @@ jobs:
 
       - name: Commit and Push to output branch
         run: |
-          git fetch origin output || true
-          git checkout output
           git add v2/
           git commit -m "Update posts from rss[bot]" || echo "No changes to commit"
           git push origin HEAD:output

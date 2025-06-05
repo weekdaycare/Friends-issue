@@ -18,14 +18,18 @@ jobs:
       issues: write
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout repository
+      - name: Checkout output branch
         uses: actions/checkout@v4
+        with:
+          ref: output
+
       # 检查链接状态
       - name: Check Reachability
         uses: xaoxuu/links-checker@main
         with:
           checker: 'reachability'
           exclude_issue_with_labels: '审核中, 白名单, 缺少互动, 缺少文章' # 具有哪些标签的issue不进行检查
+
       # 检查完毕后重新生成一下JSON
       - name: Generate data.json
         uses: xaoxuu/issues2json@main
@@ -34,6 +38,7 @@ jobs:
           data_path: '/v2/data.json'
           sort: 'created-desc' # 'created-desc'/'created-asc'/'updated-desc'/'updated-asc'
           exclude_issue_with_labels: '审核中, 无法访问, 缺少互动, 缺少文章, 风险网站' # 具有哪些标签的issue不生成到JSON中
+
       - name: Setup Git Config
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -41,8 +46,6 @@ jobs:
 
       - name: Commit and Push to output branch
         run: |
-          git fetch origin output || true
-          git checkout output
           git add v2/data.json
           git commit -m "Update data from issues" || echo "No changes to commit"
           git push origin HEAD:output
