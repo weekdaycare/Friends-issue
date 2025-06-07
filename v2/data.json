@@ -22,6 +22,31 @@
       "labels": []
     },
     {
+      "title": "星日语",
+      "url": "https://weekdaycare.cn",
+      "description": "星语日点灯",
+      "icon": "https://weekdaycare.cn/asset/avatar.svg",
+      "snapshot": "",
+      "feed": "",
+      "issue_number": 6,
+      "labels": [
+        {
+          "name": "无法访问",
+          "color": "d73a4a",
+          "hue": 354,
+          "saturation": 66,
+          "lightness": 54
+        },
+        {
+          "name": "subscribe",
+          "color": "7DDABF",
+          "hue": 163,
+          "saturation": 56,
+          "lightness": 67
+        }
+      ]
+    },
+    {
       "title": "子书承宇",
       "url": "https://hp-l.github.io/",
       "description": "霰雪纷其无垠兮，云霏霏而承宇",
@@ -86,6 +111,23 @@
       "labels": []
     },
     {
+      "title": "苏末了",
+      "url": "https://5mg.fun/",
+      "icon": "https://s2.loli.net/2023/10/20/uL7sXlj2SvtRAne.jpg",
+      "snapshot": "",
+      "feed": "",
+      "issue_number": 12,
+      "labels": [
+        {
+          "name": "无法访问",
+          "color": "d73a4a",
+          "hue": 354,
+          "saturation": 66,
+          "lightness": 54
+        }
+      ]
+    },
+    {
       "title": "十方玄机",
       "url": "https://hexo.zhongyuwen.cn/",
       "icon": "https://bu.dusays.com/2023/11/16/6555bdf2d6c34.png",
@@ -140,6 +182,24 @@
       "feed": "https://easyf12.top/atom.xml",
       "issue_number": 20,
       "labels": []
+    },
+    {
+      "title": "Quantum Bit",
+      "url": "https://www.eula.club/",
+      "descr": "Never stop searching, even if only for a brief flash of light.",
+      "icon": "https://www.eula.club/images/avatar.webp",
+      "snapshot": "",
+      "feed": "",
+      "issue_number": 22,
+      "labels": [
+        {
+          "name": "无法访问",
+          "color": "d73a4a",
+          "hue": 354,
+          "saturation": 66,
+          "lightness": 54
+        }
+      ]
     },
     {
       "title": "DSRBLOG",
