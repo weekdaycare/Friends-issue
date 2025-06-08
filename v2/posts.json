@@ -3,10 +3,31 @@
     "friends_num": 39,
     "active_num": 39,
     "error_num": 0,
-    "article_num": 61,
-    "last_updated_time": "2025-06-07 12:35"
+    "article_num": 64,
+    "last_updated_time": "2025-06-08 12:35"
   },
   "article_data": [
+    {
+      "title": "Web技术构建桌面应用方案",
+      "created": "2025-06-08 02:00",
+      "link": "https://blog.thatcoder.cn/Web-Package/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
+    },
+    {
+      "title": "Spring WebSocket 错误",
+      "created": "2025-06-07 08:10",
+      "link": "https://blog.thatcoder.cn/bug/spring-websocket-bug/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
+    },
+    {
+      "title": "SpringBoot WebSocket 代理模式、客户端模式",
+      "created": "2025-06-07 08:00",
+      "link": "https://blog.thatcoder.cn/Spring-WebSocket/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
+    },
     {
       "title": "用AI写高考作文，你会打几分",
       "created": "2025-06-07 06:01",
@@ -113,25 +134,11 @@
       "avatar": "https://avatars.githubusercontent.com/u/186286899?v=4"
     },
     {
-      "title": "Spring AOP 调用自身失效",
-      "created": "2025-03-23 12:00",
-      "link": "https://blog.thatcoder.cn/bug/spring-aop-failure-dynamic/",
-      "author": "钟意博客",
-      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
-    },
-    {
       "title": "SNAFU",
       "created": "2025-03-23 10:01",
       "link": "https://flyalready.com/snafu/",
       "author": "宇宙尽头的餐馆",
       "avatar": "https://weavatar.com/avatar/2776070fbf6cf5174f64ece2b182f92b55f4a80dedf18382070f9823e8a4c136"
-    },
-    {
-      "title": "window 端口占用但是查不到",
-      "created": "2025-03-07 14:00",
-      "link": "https://blog.thatcoder.cn/bug/port-usage/",
-      "author": "钟意博客",
-      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
     },
     {
       "title": "Monthly | 走出山之前的时刻",
@@ -239,11 +246,11 @@
       "avatar": "https://haohanxinghe.com/assets/images/avatar.jpg"
     },
     {
-      "title": "Coze同插件不同工具之间代码复用",
-      "created": "2024-12-20 16:00",
-      "link": "https://blog.thatcoder.cn/dev/coze-import/",
-      "author": "钟意博客",
-      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
+      "title": "Tailscale DERP 中继服务器的安装",
+      "created": "2024-12-02 08:45",
+      "link": "https://blog.lsy223622.com/archives/69/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "日常｜IMYAI文本处理工具箱开源随记",
@@ -288,6 +295,13 @@
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
+      "title": "西安有什么好吃的地方？（2024-10-29 更新）",
+      "created": "2024-10-28 17:48",
+      "link": "https://blog.lsy223622.com/archives/41/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
+    },
+    {
       "title": "并查集的C++实现",
       "created": "2024-10-27 04:46",
       "link": "https://blog.snowflake.zone/posts/26/",
@@ -307,6 +321,13 @@
       "link": "https://easyf12.top/posts/c47b627/",
       "author": "一蓑烟雨",
       "avatar": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp"
+    },
+    {
+      "title": "开源 AI 相册 Immich 安装记录",
+      "created": "2024-09-27 12:06",
+      "link": "https://blog.lsy223622.com/archives/65/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "C++ 手撕线程池",
