@@ -4,9 +4,23 @@
     "active_num": 39,
     "error_num": 0,
     "article_num": 64,
-    "last_updated_time": "2025-06-18 12:40"
+    "last_updated_time": "2025-06-19 12:40"
   },
   "article_data": [
+    {
+      "title": "解决ubuntu24引导grub磁盘丢失",
+      "created": "2025-06-19 02:41",
+      "link": "https://hp-l.github.io/2025/06/19/104139/",
+      "author": "子书承宇",
+      "avatar": "https://hp-l.github.io/headimg/my_avatar.jpg"
+    },
+    {
+      "title": "关于flomo和双链渐进式笔记法的吐槽，不吐不快：在增援未来的自己之前，请先增援现在的自己！",
+      "created": "2025-06-19 02:32",
+      "link": "http://achuan-2.top/post/i-m-not-happy-about-flomo-and-doublestranded-progressive-notes-before-reinforcing-my-future-self-please-reinforcing-my-current-self-first-z78fcm.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
+    },
     {
       "title": "深入讲解「番茄工作法」：一天专注十小时还不累的秘密",
       "created": "2025-06-17 11:12",
@@ -15,7 +29,7 @@
       "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
-      "title": "梦境：寄生植物与崩塌的时空",
+      "title": "梦境：寄生之种与崩塌的时空",
       "created": "2025-06-16 04:56",
       "link": "https://xaoxuu.com/blog/20250616/",
       "author": "xaoxuu",
@@ -36,14 +50,7 @@
       "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
-      "title": "圣诞树|DIY",
-      "created": "2025-06-12 01:53",
-      "link": "https://hp-l.github.io/2025/06/12/095321/",
-      "author": "子书承宇",
-      "avatar": "https://hp-l.github.io/headimg/my_avatar.jpg"
-    },
-    {
-      "title": "博客图片到底存哪儿最合适？",
+      "title": "博客图片到底该存哪儿啊？",
       "created": "2025-06-11 15:37",
       "link": "https://xaoxuu.com/blog/20250611/",
       "author": "xaoxuu",
@@ -62,13 +69,6 @@
       "link": "https://blog.thatcoder.cn/bug/spring-websocket-bug/",
       "author": "钟意博客",
       "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
-    },
-    {
-      "title": "用AI写高考作文，你会打几分",
-      "created": "2025-06-07 06:01",
-      "link": "http://achuan-2.top/post/how-many-points-will-you-give-to-write-a-college-entrance-examination-essay-using-ai-z29raja.html",
-      "author": "Achuan-2",
-      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
       "title": "Ollama使用核显跑模型",
