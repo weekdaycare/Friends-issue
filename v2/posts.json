@@ -3,10 +3,17 @@
     "friends_num": 39,
     "active_num": 39,
     "error_num": 0,
-    "article_num": 61,
-    "last_updated_time": "2025-06-25 12:40"
+    "article_num": 64,
+    "last_updated_time": "2025-06-26 12:40"
   },
   "article_data": [
+    {
+      "title": "Yearly | 走出这一座山",
+      "created": "2025-06-25 23:34",
+      "link": "https://shixiaocaia.fun/posts/438c89e6/",
+      "author": "shixiaocaia",
+      "avatar": "https://bu.dusays.com/2022/12/25/63a806f74cf5e.jpg"
+    },
     {
       "title": "ubuntu安装指纹并启用",
       "created": "2025-06-25 05:44",
@@ -185,7 +192,7 @@
     {
       "title": "我的2024",
       "created": "2025-01-26 22:26",
-      "link": "https://crisq.top/posts/%E6%88%91%E7%9A%842024/",
+      "link": "https://crisq.top/posts/2024/",
       "author": "Cris.Q",
       "avatar": "https://crisq.top/avatar.webp"
     },
@@ -246,6 +253,13 @@
       "avatar": "https://haohanxinghe.com/assets/images/avatar.jpg"
     },
     {
+      "title": "Tailscale DERP 中继服务器的安装",
+      "created": "2024-12-02 08:45",
+      "link": "https://blog.lsy223622.com/archives/69/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
+    },
+    {
       "title": "日常｜IMYAI文本处理工具箱开源随记",
       "created": "2024-11-24 12:26",
       "link": "https://icodeq.com/2024/094de95c3f5a/",
@@ -288,18 +302,18 @@
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
+      "title": "西安有什么好吃的地方？（2024-10-29 更新）",
+      "created": "2024-10-28 17:48",
+      "link": "https://blog.lsy223622.com/archives/41/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
+    },
+    {
       "title": "并查集的C++实现",
       "created": "2024-10-27 04:46",
       "link": "https://blog.snowflake.zone/posts/26/",
       "author": "Felix Chen",
       "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
-    },
-    {
-      "title": "Monthly | 写在 2024 年的一些话",
-      "created": "2024-10-24 04:29",
-      "link": "https://shixiaocaia.fun/posts/b0576fda/",
-      "author": "shixiaocaia",
-      "avatar": "https://bu.dusays.com/2022/12/25/63a806f74cf5e.jpg"
     },
     {
       "title": "涅槃",
@@ -309,25 +323,18 @@
       "avatar": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp"
     },
     {
+      "title": "开源 AI 相册 Immich 安装记录",
+      "created": "2024-09-27 12:06",
+      "link": "https://blog.lsy223622.com/archives/65/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
+    },
+    {
       "title": "C++ 手撕线程池",
       "created": "2024-09-23 16:00",
       "link": "https://blog.snowflake.zone/posts/25/",
       "author": "Felix Chen",
       "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
-    },
-    {
-      "title": "再谈笔记软件",
-      "created": "2024-09-08 09:44",
-      "link": "https://crisq.top/posts/note_again/",
-      "author": "Cris.Q",
-      "avatar": "https://crisq.top/avatar.webp"
-    },
-    {
-      "title": "琴师",
-      "created": "2024-08-25 11:43",
-      "link": "https://crisq.top/posts/guqin/",
-      "author": "Cris.Q",
-      "avatar": "https://crisq.top/avatar.webp"
     },
     {
       "title": "Biostar workflows",
@@ -356,6 +363,13 @@
       "link": "https://blog.mysto.cyou/posts/240401-jinyongmemorial/",
       "author": "咖啡冰河",
       "avatar": "https://s1.ax1x.com/2022/05/28/XuW2h6.png"
+    },
+    {
+      "title": "也许我们还缺一个年终总结",
+      "created": "2024-01-21 12:35",
+      "link": "https://crisq.top/posts/2023/",
+      "author": "Cris.Q",
+      "avatar": "https://crisq.top/avatar.webp"
     },
     {
       "title": "整活代码整理分享",
@@ -412,6 +426,13 @@
       "link": "https://colsrch.cn/posts/71314686/",
       "author": "Colsrch",
       "avatar": "https://bu.dusays.com/2022/02/23/cb173cbdcc7c6.png"
+    },
+    {
+      "title": "年末随笔",
+      "created": "2022-12-25 17:06",
+      "link": "https://crisq.top/posts/2022/",
+      "author": "Cris.Q",
+      "avatar": "https://crisq.top/avatar.webp"
     },
     {
       "title": "ping 每隔几秒出现一次延迟特别大的解决方法",
