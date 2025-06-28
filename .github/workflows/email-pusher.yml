@@ -19,7 +19,7 @@ jobs:
       - name: Send Blog Update Email
         uses: weekdaycare/email-pusher@main
         with:
-          rss_url: "https://weekdaycare.cn/atom.xml"
+          rss_url: "https://weekdaycare.github.io/atom.xml"
           smtp_server: "smtp.feishu.cn"
           smtp_port: 587
           sender_email: "comment@weekdaycare.cn"
