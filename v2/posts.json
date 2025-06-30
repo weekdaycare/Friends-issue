@@ -3,16 +3,16 @@
     "friends_num": 39,
     "active_num": 39,
     "error_num": 0,
-    "article_num": 64,
-    "last_updated_time": "2025-06-29 12:36"
+    "article_num": 58,
+    "last_updated_time": "2025-06-30 12:40"
   },
   "article_data": [
     {
-      "title": "从宝塔面板迁移网站到 1Panel 的注意事项",
-      "created": "2025-06-28 09:54",
-      "link": "https://blog.lsy223622.com/archives/70/",
-      "author": "木生懒得写博客",
-      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
+      "title": "思源笔记与Zotero联动详细教程：如何用思源笔记管理文献、写文献笔记、写论文初稿",
+      "created": "2025-06-29 02:18",
+      "link": "http://achuan-2.top/post/detailed-tutorial-on-linking-siyuan-notes-and-zotero-how-to-use-siyuan-notes-to-manage-literature-write-document-notes-and-write-first-draft-of-papers-28ub2m.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
       "title": "蓝屏死机请重启",
@@ -36,13 +36,6 @@
       "avatar": "https://bu.dusays.com/2022/12/25/63a806f74cf5e.jpg"
     },
     {
-      "title": "ubuntu安装指纹并启用",
-      "created": "2025-06-25 05:44",
-      "link": "https://hp-l.github.io/2025/06/25/134439/",
-      "author": "子书承宇",
-      "avatar": "https://hp-l.github.io/headimg/my_avatar.jpg"
-    },
-    {
       "title": "华为老机子优化",
       "created": "2025-06-22 05:41",
       "link": "https://ayellowdogsays.cn/2025/06/22/44.md/",
@@ -55,13 +48,6 @@
       "link": "https://blog.thatcoder.cn/Blog-Load-Balance/",
       "author": "钟意博客",
       "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
-    },
-    {
-      "title": "解决ubuntu24引导grub磁盘丢失",
-      "created": "2025-06-19 02:41",
-      "link": "https://hp-l.github.io/2025/06/19/104139/",
-      "author": "子书承宇",
-      "avatar": "https://hp-l.github.io/headimg/my_avatar.jpg"
     },
     {
       "title": "关于flomo和双链渐进式笔记法的吐槽，不吐不快：在增援未来的自己之前，请先增援现在的自己！",
@@ -92,13 +78,6 @@
       "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
     },
     {
-      "title": "为了在笔记软件里进行任务管理，我写了一个插件，代替滴答清单",
-      "created": "2025-06-14 05:22",
-      "link": "http://achuan-2.top/post/in-order-to-manage-tasks-in-the-notes-software-i-wrote-a-plugin-instead-of-the-ticking-list-zlaurd.html",
-      "author": "Achuan-2",
-      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
-    },
-    {
       "title": "博客图片到底该存哪儿啊？",
       "created": "2025-06-11 15:37",
       "link": "https://xaoxuu.com/blog/20250611/",
@@ -111,13 +90,6 @@
       "link": "https://blog.thatcoder.cn/Web-Package/",
       "author": "钟意博客",
       "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
-    },
-    {
-      "title": "Ollama使用核显跑模型",
-      "created": "2025-06-05 07:24",
-      "link": "https://hp-l.github.io/2025/06/05/152454/",
-      "author": "子书承宇",
-      "avatar": "https://hp-l.github.io/headimg/my_avatar.jpg"
     },
     {
       "title": "梦境：末日之后",
@@ -267,13 +239,6 @@
       "avatar": "https://haohanxinghe.com/assets/images/avatar.jpg"
     },
     {
-      "title": "Tailscale DERP 中继服务器的安装",
-      "created": "2024-12-02 08:45",
-      "link": "https://blog.lsy223622.com/archives/69/",
-      "author": "木生懒得写博客",
-      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
-    },
-    {
       "title": "日常｜IMYAI文本处理工具箱开源随记",
       "created": "2024-11-24 12:26",
       "link": "https://icodeq.com/2024/094de95c3f5a/",
@@ -314,13 +279,6 @@
       "link": "https://blog.hzchu.top/2024/%E8%AF%AD%E9%9F%B3%E5%AE%A4%E6%8E%92%E9%9A%9C%E6%8C%87%E5%8D%97/",
       "author": "Thun888",
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
-      "title": "西安有什么好吃的地方？（2024-10-29 更新）",
-      "created": "2024-10-28 17:48",
-      "link": "https://blog.lsy223622.com/archives/41/",
-      "author": "木生懒得写博客",
-      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "并查集的C++实现",
