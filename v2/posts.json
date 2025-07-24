@@ -3,10 +3,31 @@
     "friends_num": 39,
     "active_num": 39,
     "error_num": 0,
-    "article_num": 64,
-    "last_updated_time": "2025-07-23 12:42"
+    "article_num": 61,
+    "last_updated_time": "2025-07-24 12:43"
   },
   "article_data": [
+    {
+      "title": "Cursor 0.45.14 卸载不完全",
+      "created": "2025-07-24 09:16",
+      "link": "http://achuan-2.top/post/cursor-04514-uninstalled-incompletely-1bmg9x.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
+    },
+    {
+      "title": "hexo永久地址",
+      "created": "2025-07-24 08:41",
+      "link": "https://ayellowdogsays.top/dogs/20250724hexo987654321234678/",
+      "author": "阿黄说",
+      "avatar": "https://avatars.githubusercontent.com/u/186286899?v=4"
+    },
+    {
+      "title": "stellar主题修改",
+      "created": "2025-07-24 08:35",
+      "link": "https://ayellowdogsays.top/dogs/20250724dogcarebyyeuios]a/",
+      "author": "阿黄说",
+      "avatar": "https://avatars.githubusercontent.com/u/186286899?v=4"
+    },
     {
       "title": "一种使用Edgeone Page反向代理的方法",
       "created": "2025-07-22 17:20",
@@ -24,7 +45,7 @@
     {
       "title": "阿黄说部署",
       "created": "2025-07-15 10:38",
-      "link": "https://ayellowdogsays.top/posts/aWQe24318.html",
+      "link": "https://ayellowdogsays.top/dogs/20250715123/",
       "author": "阿黄说",
       "avatar": "https://avatars.githubusercontent.com/u/186286899?v=4"
     },
@@ -148,13 +169,6 @@
       "avatar": "https://bu.dusays.com/2022/12/25/63a806f74cf5e.jpg"
     },
     {
-      "title": "华为老机子优化",
-      "created": "2025-06-22 05:41",
-      "link": "https://ayellowdogsays.top/2025/06/22/44.md/",
-      "author": "阿黄说",
-      "avatar": "https://avatars.githubusercontent.com/u/186286899?v=4"
-    },
-    {
       "title": "博客多平台负载均衡方案",
       "created": "2025-06-21 02:00",
       "link": "https://blog.thatcoder.cn/Blog-Load-Balance/",
@@ -165,13 +179,6 @@
       "title": "关于flomo和双链渐进式笔记法的吐槽，不吐不快：在增援未来的自己之前，请先增援现在的自己！",
       "created": "2025-06-19 02:32",
       "link": "http://achuan-2.top/post/i-m-not-happy-about-flomo-and-doublestranded-progressive-notes-before-reinforcing-my-future-self-please-reinforcing-my-current-self-first-z78fcm.html",
-      "author": "Achuan-2",
-      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
-    },
-    {
-      "title": "深入讲解「番茄工作法」：一天专注十小时还不累的秘密",
-      "created": "2025-06-17 11:12",
-      "link": "http://achuan-2.top/post/indepth-explanation-of-tomato-work-method-the-secret-of-focusing-on-ten-hours-a-day-without-tired-135zeh.html",
       "author": "Achuan-2",
       "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
@@ -197,25 +204,11 @@
       "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
     },
     {
-      "title": "2025年第二篇",
-      "created": "2025-05-04 00:58",
-      "link": "https://ayellowdogsays.top/2025/05/04/%E5%9F%9F%E5%90%8D.md/",
-      "author": "阿黄说",
-      "avatar": "https://avatars.githubusercontent.com/u/186286899?v=4"
-    },
-    {
       "title": "远离生产线之后",
       "created": "2025-04-06 00:26",
       "link": "https://easyf12.top/posts/899c7ac2/",
       "author": "一蓑烟雨",
       "avatar": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp"
-    },
-    {
-      "title": "我支持对虐待动物行为立法",
-      "created": "2025-03-07 01:29",
-      "link": "http://skyreeves.com/post/a83d1dd1.html",
-      "author": "SkyReeves",
-      "avatar": "https://img.skyreeves.com/main/avatar96.gif"
     },
     {
       "title": "Monthly | 走出山之前的时刻",
@@ -358,13 +351,6 @@
       "avatar": "https://crisq.top/avatar.webp"
     },
     {
-      "title": "摄影是用光的艺术",
-      "created": "2023-12-06 02:47",
-      "link": "http://skyreeves.com/post/3e796ddb.html",
-      "author": "SkyReeves",
-      "avatar": "https://img.skyreeves.com/main/avatar96.gif"
-    },
-    {
       "title": "整活代码整理分享",
       "created": "2023-12-01 03:11",
       "link": "https://yaoyuan.vip/2023/12/01/19-%E6%95%B4%E6%B4%BB%E4%BB%A3%E7%A0%81%E6%95%B4%E7%90%86%E5%88%86%E4%BA%AB/",
@@ -377,13 +363,6 @@
       "link": "https://yaoyuan.vip/2023/11/29/18-%E8%8F%9C%E5%8D%95/",
       "author": "姚远",
       "avatar": "https://yaoyuan.vip/images/Avatar.jpg"
-    },
-    {
-      "title": "总要去趟西藏吧",
-      "created": "2023-11-16 02:58",
-      "link": "http://skyreeves.com/post/e6a98279.html",
-      "author": "SkyReeves",
-      "avatar": "https://img.skyreeves.com/main/avatar96.gif"
     },
     {
       "title": "项目课 ｜ Vue.js开发印象云笔记",
