@@ -4,9 +4,16 @@
     "active_num": 39,
     "error_num": 0,
     "article_num": 52,
-    "last_updated_time": "2025-08-19 12:39"
+    "last_updated_time": "2025-08-20 12:39"
   },
   "article_data": [
+    {
+      "title": "思源笔记连接本地ollama",
+      "created": "2025-08-20 03:35",
+      "link": "https://blog.findingx.cc/2025/08/20/113503/",
+      "author": "方寻",
+      "avatar": "https://hub.gitmirror.com/raw.githubusercontent.com/HP-L/blog-main-site-images/refs/heads/master/headimg/my_avatar.jpg"
+    },
     {
       "title": "Coding | 分别用2天半和9天，我用 ClaudeCode 写出了自己的影视站和音乐站",
       "created": "2025-08-18 19:58",
@@ -104,13 +111,6 @@
       "link": "https://xaoxuu.com/blog/20250713/",
       "author": "xaoxuu",
       "avatar": "https://pic1.imgdb.cn/item/6342621016f2c2beb146c2ed.jpg"
-    },
-    {
-      "title": "使用自己的域名登录到我的世界服务器",
-      "created": "2025-07-12 03:02",
-      "link": "https://blog.findingx.cc/2025/07/12/110203/",
-      "author": "方寻",
-      "avatar": "https://hub.gitmirror.com/raw.githubusercontent.com/HP-L/blog-main-site-images/refs/heads/master/headimg/my_avatar.jpg"
     },
     {
       "title": "Tkinter 实现线装书页码编排",
@@ -274,6 +274,13 @@
       "avatar": "https://fastly.jsdelivr.net/gh/xiangshu233/cdn@2.8/img/custom/touxiang.jpg"
     },
     {
+      "title": "琴师",
+      "created": "2024-08-25 11:43",
+      "link": "https://crisq.top/posts/guqin/",
+      "author": "Cris.Q",
+      "avatar": "https://crisq.top/avatar.webp"
+    },
+    {
       "title": "Biostar workflows",
       "created": "2024-06-11 03:00",
       "link": "https://smileszh.github.io/posts/d08e2cc.html",
@@ -286,13 +293,6 @@
       "link": "https://smileszh.github.io/posts/b536050b.html",
       "author": "海底捞里没有鱼",
       "avatar": "https://bu.dusays.com/2023/06/10/648499e1299d0.jpg"
-    },
-    {
-      "title": "也许我们还缺一个年终总结",
-      "created": "2024-01-21 12:35",
-      "link": "https://crisq.top/posts/2023/",
-      "author": "Cris.Q",
-      "avatar": "https://crisq.top/avatar.webp"
     },
     {
       "title": "整活代码整理分享",
