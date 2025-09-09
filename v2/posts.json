@@ -3,10 +3,17 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 46,
-    "last_updated_time": "2025-09-08 12:39"
+    "article_num": 49,
+    "last_updated_time": "2025-09-09 12:40"
   },
   "article_data": [
+    {
+      "title": "一个简单的视频字幕转写和翻译流程",
+      "created": "2025-09-07 13:02",
+      "link": "https://blog.hzchu.top/2025/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%A7%86%E9%A2%91%E5%AD%97%E5%B9%95%E8%BD%AC%E5%86%99%E5%92%8C%E7%BF%BB%E8%AF%91%E6%B5%81%E7%A8%8B/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
+    },
     {
       "title": "Hexo 博客搭建：一份写给新手的完全指南",
       "created": "2025-09-07 12:40",
@@ -27,6 +34,13 @@
       "link": "https://icodeq.com/2025/971267c44ff5/",
       "author": "Zkeq の Coding 日志",
       "avatar": "https://img.onmicrosoft.cn/Avatar.jpg"
+    },
+    {
+      "title": "什么是英语听说？",
+      "created": "2025-08-24 00:05",
+      "link": "https://blog.hzchu.top/2025/%E8%8B%B1%E8%AF%AD%E5%90%AC%E8%AF%B4/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
       "title": "云声计划 ｜ 如何使用宝塔最新版 + Vercel，来部署一个私人的影视站+音乐站",
@@ -55,6 +69,13 @@
       "link": "https://blog.mysto.cyou/posts/250817-mtmte01/",
       "author": "咖啡冰河",
       "avatar": "https://s1.ax1x.com/2022/05/28/XuW2h6.png"
+    },
+    {
+      "title": "一种在Vercel上运行Artalk的思路",
+      "created": "2025-08-14 21:04",
+      "link": "https://blog.hzchu.top/2025/%E4%B8%80%E7%A7%8D%E5%9C%A8Vercel%E4%B8%8A%E8%BF%90%E8%A1%8CArtalk%E7%9A%84%E6%80%9D%E8%B7%AF/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
       "title": "研究生要有“农夫思维”，以产出为导向，放下“打铁匠思维”",
