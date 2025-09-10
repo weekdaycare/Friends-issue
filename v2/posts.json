@@ -4,9 +4,16 @@
     "active_num": 40,
     "error_num": 0,
     "article_num": 49,
-    "last_updated_time": "2025-09-09 12:40"
+    "last_updated_time": "2025-09-10 12:37"
   },
   "article_data": [
+    {
+      "title": "NSY-G68-PRO农商云路由器固件编译（openwrt的技能）",
+      "created": "2025-09-10 05:44",
+      "link": "https://blog.findingx.cc/2025/09/10/134439/",
+      "author": "方寻",
+      "avatar": "https://hub.gitmirror.com/raw.githubusercontent.com/HP-L/blog-main-site-images/refs/heads/master/headimg/my_avatar.jpg"
+    },
     {
       "title": "一个简单的视频字幕转写和翻译流程",
       "created": "2025-09-07 13:02",
@@ -104,13 +111,6 @@
       "link": "http://achuan-2.top/post/cursor-04514-uninstalled-incompletely-1bmg9x.html",
       "author": "Achuan-2",
       "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
-    },
-    {
-      "title": "风雨相随|NOTE",
-      "created": "2025-07-20 01:09",
-      "link": "https://blog.findingx.cc/2025/07/20/090905/",
-      "author": "方寻",
-      "avatar": "https://hub.gitmirror.com/raw.githubusercontent.com/HP-L/blog-main-site-images/refs/heads/master/headimg/my_avatar.jpg"
     },
     {
       "title": "认真生活",
