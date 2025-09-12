@@ -3,10 +3,17 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 49,
-    "last_updated_time": "2025-09-11 12:36"
+    "article_num": 46,
+    "last_updated_time": "2025-09-12 12:36"
   },
   "article_data": [
+    {
+      "title": "从想法到落地：我是如何在两个小时的时间里做出一个人格完善站的。(支持大家随意提问情感问题)",
+      "created": "2025-09-12 16:07",
+      "link": "https://icodeq.com/2025/3e2ff93ad9e4/",
+      "author": "Zkeq の Coding 日志",
+      "avatar": "https://img.onmicrosoft.cn/Avatar.jpg"
+    },
     {
       "title": "OpenWrt节点搭建",
       "created": "2025-09-11 06:44",
@@ -57,13 +64,6 @@
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
-      "title": "云声计划 ｜ 如何使用宝塔最新版 + Vercel，来部署一个私人的影视站+音乐站",
-      "created": "2025-08-21 14:12",
-      "link": "https://icodeq.com/2025/a747161ccf76/",
-      "author": "Zkeq の Coding 日志",
-      "avatar": "https://img.onmicrosoft.cn/Avatar.jpg"
-    },
-    {
       "title": "思源笔记连接本地ollama",
       "created": "2025-08-20 03:35",
       "link": "https://blog.findingx.cc/2025/08/20/113503/",
@@ -90,27 +90,6 @@
       "link": "https://blog.hzchu.top/2025/%E4%B8%80%E7%A7%8D%E5%9C%A8Vercel%E4%B8%8A%E8%BF%90%E8%A1%8CArtalk%E7%9A%84%E6%80%9D%E8%B7%AF/",
       "author": "Thun888",
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
-      "title": "研究生要有“农夫思维”，以产出为导向，放下“打铁匠思维”",
-      "created": "2025-08-02 08:26",
-      "link": "http://achuan-2.top/post/postgraduate-students-should-have-a-farmer-s-mind-be-outputoriented-and-put-aside-the-blacksmith-s-mind-1evlno.html",
-      "author": "Achuan-2",
-      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
-    },
-    {
-      "title": "《智能简史》",
-      "created": "2025-07-31 15:23",
-      "link": "http://achuan-2.top/post/a-brief-history-of-intelligence-zer007.html",
-      "author": "Achuan-2",
-      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
-    },
-    {
-      "title": "Cursor 0.45.14 卸载不完全",
-      "created": "2025-07-24 09:16",
-      "link": "http://achuan-2.top/post/cursor-04514-uninstalled-incompletely-1bmg9x.html",
-      "author": "Achuan-2",
-      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
       "title": "认真生活",
