@@ -3,8 +3,8 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 46,
-    "last_updated_time": "2025-09-12 12:36"
+    "article_num": 49,
+    "last_updated_time": "2025-09-13 12:33"
   },
   "article_data": [
     {
@@ -29,13 +29,6 @@
       "avatar": "https://hub.gitmirror.com/raw.githubusercontent.com/HP-L/blog-main-site-images/refs/heads/master/headimg/my_avatar.jpg"
     },
     {
-      "title": "一个简单的视频字幕转写和翻译流程",
-      "created": "2025-09-07 13:02",
-      "link": "https://blog.hzchu.top/2025/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%A7%86%E9%A2%91%E5%AD%97%E5%B9%95%E8%BD%AC%E5%86%99%E5%92%8C%E7%BF%BB%E8%AF%91%E6%B5%81%E7%A8%8B/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
       "title": "Hexo 博客搭建：一份写给新手的完全指南",
       "created": "2025-09-07 12:40",
       "link": "https://icodeq.com/2025/f16aad5a9061/",
@@ -55,13 +48,6 @@
       "link": "https://icodeq.com/2025/971267c44ff5/",
       "author": "Zkeq の Coding 日志",
       "avatar": "https://img.onmicrosoft.cn/Avatar.jpg"
-    },
-    {
-      "title": "什么是英语听说？",
-      "created": "2025-08-24 00:05",
-      "link": "https://blog.hzchu.top/2025/%E8%8B%B1%E8%AF%AD%E5%90%AC%E8%AF%B4/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
       "title": "思源笔记连接本地ollama",
@@ -85,11 +71,25 @@
       "avatar": "https://s1.ax1x.com/2022/05/28/XuW2h6.png"
     },
     {
-      "title": "一种在Vercel上运行Artalk的思路",
-      "created": "2025-08-14 21:04",
-      "link": "https://blog.hzchu.top/2025/%E4%B8%80%E7%A7%8D%E5%9C%A8Vercel%E4%B8%8A%E8%BF%90%E8%A1%8CArtalk%E7%9A%84%E6%80%9D%E8%B7%AF/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
+      "title": "研究生要有“农夫思维”，以产出为导向，放下“打铁匠思维”",
+      "created": "2025-08-02 08:26",
+      "link": "http://achuan-2.top/post/postgraduate-students-should-have-a-farmer-s-mind-be-outputoriented-and-put-aside-the-blacksmith-s-mind-1evlno.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
+    },
+    {
+      "title": "《智能简史》",
+      "created": "2025-07-31 15:23",
+      "link": "http://achuan-2.top/post/a-brief-history-of-intelligence-zer007.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
+    },
+    {
+      "title": "Cursor 0.45.14 卸载不完全",
+      "created": "2025-07-24 09:16",
+      "link": "http://achuan-2.top/post/cursor-04514-uninstalled-incompletely-1bmg9x.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
       "title": "认真生活",
@@ -139,6 +139,20 @@
       "link": "https://xaoxuu.com/blog/20250705/",
       "author": "xaoxuu",
       "avatar": "https://pic1.imgdb.cn/item/6342621016f2c2beb146c2ed.jpg"
+    },
+    {
+      "title": "雅思半裸考7.5😋",
+      "created": "2025-07-01 15:47",
+      "link": "https://blog.lsy223622.com/archives/72/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
+    },
+    {
+      "title": "从宝塔面板迁移网站到 1Panel 的注意事项",
+      "created": "2025-06-28 09:54",
+      "link": "https://blog.lsy223622.com/archives/70/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "江南漫溯 | 南京篇",
@@ -209,6 +223,13 @@
       "link": "https://easyf12.top/posts/ac7801e/",
       "author": "一蓑烟雨",
       "avatar": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp"
+    },
+    {
+      "title": "Tailscale DERP 中继服务器的安装",
+      "created": "2024-12-02 08:45",
+      "link": "https://blog.lsy223622.com/archives/69/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "书单",
