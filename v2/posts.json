@@ -3,8 +3,8 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 49,
-    "last_updated_time": "2025-09-25 12:39"
+    "article_num": 52,
+    "last_updated_time": "2025-09-26 12:38"
   },
   "article_data": [
     {
@@ -55,6 +55,13 @@
       "link": "https://icodeq.com/2025/f16aad5a9061/",
       "author": "Zkeq の Coding 日志",
       "avatar": "https://img.onmicrosoft.cn/Avatar.jpg"
+    },
+    {
+      "title": "海光 K100 DCU VLLM 推理环境构建",
+      "created": "2025-08-30 02:00",
+      "link": "https://blog.thatcoder.cn/ai/hygon-vllm/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
     },
     {
       "title": "Golang | 山竹记账 Go 后端版学习笔记",
@@ -181,6 +188,20 @@
       "link": "https://crisq.top/posts/jiang_nan/",
       "author": "Cris.Q",
       "avatar": "https://crisq.top/avatar.webp"
+    },
+    {
+      "title": "博客多平台负载均衡方案",
+      "created": "2025-06-21 02:00",
+      "link": "https://blog.thatcoder.cn/Blog-Load-Balance/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
+    },
+    {
+      "title": "浅谈RAG",
+      "created": "2025-06-15 02:00",
+      "link": "https://blog.thatcoder.cn/ai/RAG/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
     },
     {
       "title": "C++条件变量(Conditional Variable)",
