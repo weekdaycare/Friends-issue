@@ -4,9 +4,16 @@
     "active_num": 40,
     "error_num": 0,
     "article_num": 52,
-    "last_updated_time": "2025-09-26 12:38"
+    "last_updated_time": "2025-09-27 12:33"
   },
   "article_data": [
+    {
+      "title": "使用AHK接管Copilot键",
+      "created": "2025-09-27 10:25",
+      "link": "https://blog.hzchu.top/2025/%E4%BD%BF%E7%94%A8AHK%E6%8E%A5%E7%AE%A1Copilot%E9%94%AE/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
+    },
     {
       "title": "蚂蚁拆家之日",
       "created": "2025-09-20 00:00",
@@ -97,13 +104,6 @@
       "link": "https://blog.mysto.cyou/posts/250817-mtmte01/",
       "author": "咖啡冰河",
       "avatar": "https://s1.ax1x.com/2022/05/28/XuW2h6.png"
-    },
-    {
-      "title": "一种在Vercel上运行Artalk的思路",
-      "created": "2025-08-14 21:04",
-      "link": "https://blog.hzchu.top/2025/%E4%B8%80%E7%A7%8D%E5%9C%A8Vercel%E4%B8%8A%E8%BF%90%E8%A1%8CArtalk%E7%9A%84%E6%80%9D%E8%B7%AF/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
       "title": "研究生要有“农夫思维”，以产出为导向，放下“打铁匠思维”",
