@@ -4,9 +4,16 @@
     "active_num": 40,
     "error_num": 0,
     "article_num": 52,
-    "last_updated_time": "2025-09-27 12:33"
+    "last_updated_time": "2025-09-28 12:34"
   },
   "article_data": [
+    {
+      "title": "拖延症救星",
+      "created": "2025-09-28 04:20",
+      "link": "https://blog.findingx.cc/2025/09/28/122039/",
+      "author": "方寻",
+      "avatar": "https://hub.gitmirror.com/raw.githubusercontent.com/HP-L/blog-main-site-images/refs/heads/master/headimg/my_avatar.jpg"
+    },
     {
       "title": "使用AHK接管Copilot键",
       "created": "2025-09-27 10:25",
@@ -83,13 +90,6 @@
       "link": "https://blog.hzchu.top/2025/%E8%8B%B1%E8%AF%AD%E5%90%AC%E8%AF%B4/",
       "author": "Thun888",
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
-      "title": "思源笔记连接本地ollama",
-      "created": "2025-08-20 03:35",
-      "link": "https://blog.findingx.cc/2025/08/20/113503/",
-      "author": "方寻",
-      "avatar": "https://hub.gitmirror.com/raw.githubusercontent.com/HP-L/blog-main-site-images/refs/heads/master/headimg/my_avatar.jpg"
     },
     {
       "title": "你看，活水",
