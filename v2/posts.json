@@ -4,9 +4,16 @@
     "active_num": 40,
     "error_num": 0,
     "article_num": 52,
-    "last_updated_time": "2025-11-04 12:43"
+    "last_updated_time": "2025-11-05 12:41"
   },
   "article_data": [
+    {
+      "title": "像训练AI一样，训练你自己",
+      "created": "2025-11-05 06:53",
+      "link": "http://achuan-2.top/post/just-like-training-ai-train-yourself-puxen.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
+    },
     {
       "title": "为您呈献：第一届金破烂颁奖典礼",
       "created": "2025-10-24 17:41",
@@ -151,13 +158,6 @@
       "title": "《智能简史》",
       "created": "2025-07-31 15:23",
       "link": "http://achuan-2.top/post/a-brief-history-of-intelligence-zer007.html",
-      "author": "Achuan-2",
-      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
-    },
-    {
-      "title": "Cursor 0.45.14 卸载不完全",
-      "created": "2025-07-24 09:16",
-      "link": "http://achuan-2.top/post/cursor-04514-uninstalled-incompletely-1bmg9x.html",
       "author": "Achuan-2",
       "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
