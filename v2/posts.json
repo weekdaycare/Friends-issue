@@ -3,10 +3,17 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 49,
-    "last_updated_time": "2025-12-18 12:42"
+    "article_num": 52,
+    "last_updated_time": "2025-12-19 12:41"
   },
   "article_data": [
+    {
+      "title": "部署Labelstudio在线标注系统",
+      "created": "2025-12-16 18:19",
+      "link": "https://blog.hzchu.top/2025/%E9%83%A8%E7%BD%B2Labelstudio/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
+    },
     {
       "title": "科艺知识库 ARM64",
       "created": "2025-12-02 14:00",
@@ -32,13 +39,6 @@
       "title": "StarVote的python实现",
       "created": "2025-11-16 09:31",
       "link": "https://blog.hzchu.top/2025/StarVote%E7%9A%84python%E5%AE%9E%E7%8E%B0/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
-      "title": "用企业微信获取微信表情包",
-      "created": "2025-11-15 22:39",
-      "link": "https://blog.hzchu.top/2025/%E7%94%A8%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E8%8E%B7%E5%8F%96%E5%BE%AE%E4%BF%A1%E8%A1%A8%E6%83%85%E5%8C%85/",
       "author": "Thun888",
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
@@ -69,6 +69,13 @@
       "link": "https://easyf12.top/posts/6fa0ff8b/",
       "author": "一蓑烟雨",
       "avatar": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp"
+    },
+    {
+      "title": "使用 Obsidian 和 Nextcloud 配置多端同步日记",
+      "created": "2025-10-10 16:37",
+      "link": "https://blog.lsy223622.com/archives/75/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "胶东半岛观察",
@@ -209,6 +216,20 @@
       "link": "https://blog.snowflake.zone/posts/28/",
       "author": "Felix Chen",
       "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
+    },
+    {
+      "title": "雅思半裸考7.5😋",
+      "created": "2025-07-01 15:47",
+      "link": "https://blog.lsy223622.com/archives/72/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
+    },
+    {
+      "title": "从宝塔面板迁移网站到 1Panel 的注意事项",
+      "created": "2025-06-28 09:54",
+      "link": "https://blog.lsy223622.com/archives/70/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "C++条件变量(Conditional Variable)",
