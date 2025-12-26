@@ -4,9 +4,16 @@
     "active_num": 40,
     "error_num": 0,
     "article_num": 52,
-    "last_updated_time": "2025-12-25 12:41"
+    "last_updated_time": "2025-12-26 12:41"
   },
   "article_data": [
+    {
+      "title": "寒招 | 宣传片",
+      "created": "2025-12-26 16:41",
+      "link": "https://blog.hzchu.top/2025/%E5%AF%92%E6%8B%9B%E5%AE%A3%E4%BC%A0%E7%89%87/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
+    },
     {
       "title": "部署LabelStudio在线标注系统",
       "created": "2025-12-16 18:19",
@@ -32,13 +39,6 @@
       "title": "在红米7上运行Linux",
       "created": "2025-11-16 18:34",
       "link": "https://blog.hzchu.top/2025/%E5%9C%A8%E7%BA%A2%E7%B1%B37%E4%B8%8A%E8%BF%90%E8%A1%8CLinux/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
-      "title": "StarVote的python实现",
-      "created": "2025-11-16 09:31",
-      "link": "https://blog.hzchu.top/2025/StarVote%E7%9A%84python%E5%AE%9E%E7%8E%B0/",
       "author": "Thun888",
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
