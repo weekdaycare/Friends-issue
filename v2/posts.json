@@ -3,8 +3,8 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 43,
-    "last_updated_time": "2026-02-03 13:00"
+    "article_num": 46,
+    "last_updated_time": "2026-02-04 12:59"
   },
   "article_data": [
     {
@@ -55,6 +55,13 @@
       "link": "https://blog.hzchu.top/2025/%E5%9C%A8%E7%BA%A2%E7%B1%B37%E4%B8%8A%E8%BF%90%E8%A1%8CLinux/",
       "author": "Thun888",
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
+    },
+    {
+      "title": "像训练AI一样，训练你自己",
+      "created": "2025-11-05 06:53",
+      "link": "http://achuan-2.top/post/just-like-training-ai-train-yourself-puxen.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
       "title": "为您呈献：第一届金破烂颁奖典礼",
@@ -160,6 +167,20 @@
       "link": "https://blog.mysto.cyou/posts/250817-mtmte01/",
       "author": "咖啡冰河",
       "avatar": "https://s1.ax1x.com/2022/05/28/XuW2h6.png"
+    },
+    {
+      "title": "研究生要有“农夫思维”，以产出为导向，放下“打铁匠思维”",
+      "created": "2025-08-02 08:26",
+      "link": "http://achuan-2.top/post/postgraduate-students-should-have-a-farmer-s-mind-be-outputoriented-and-put-aside-the-blacksmith-s-mind-1evlno.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
+    },
+    {
+      "title": "《智能简史》",
+      "created": "2025-07-31 15:23",
+      "link": "http://achuan-2.top/post/a-brief-history-of-intelligence-zer007.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
       "title": "认真生活",
