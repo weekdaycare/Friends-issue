@@ -3,10 +3,17 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 34,
-    "last_updated_time": "2026-02-26 13:06"
+    "article_num": 37,
+    "last_updated_time": "2026-02-27 12:59"
   },
   "article_data": [
+    {
+      "title": "解决一些笔记本电脑更换主板后的问题",
+      "created": "2026-02-26 21:18",
+      "link": "https://blog.hzchu.top/2026/solve-laptop-motherboard-problems/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
+    },
     {
       "title": "连续两个晚上做梦笑醒",
       "created": "2026-02-26 12:00",
@@ -29,13 +36,6 @@
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
-      "title": "罗小黑网站分析",
-      "created": "2026-02-23 10:53",
-      "link": "https://blog.hzchu.top/2026/lxh-websites/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
       "title": "年度｜我的2025年度总结",
       "created": "2026-02-19 19:13",
       "link": "https://icodeq.com/2026/3c22f432c78e/",
@@ -43,11 +43,25 @@
       "avatar": "https://img.onmicrosoft.cn/Avatar.jpg"
     },
     {
+      "title": "大语言模型的不确定性",
+      "created": "2026-02-07 02:00",
+      "link": "https://log.cns.red/ai/llm-Indeterminacy/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
+    },
+    {
       "title": "2025年度OKR复盘",
       "created": "2026-01-16 12:36",
       "link": "https://xaoxuu.com/blog/20260116/",
       "author": "xaoxuu",
       "avatar": "https://pic1.imgdb.cn/item/6342621016f2c2beb146c2ed.jpg"
+    },
+    {
+      "title": "科艺知识库 ARM64",
+      "created": "2025-12-02 14:00",
+      "link": "https://log.cns.red/kykms-arm64/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
     },
     {
       "title": "2025",
@@ -76,6 +90,13 @@
       "link": "https://xaoxuu.com/blog/20251013/",
       "author": "xaoxuu",
       "avatar": "https://pic1.imgdb.cn/item/6342621016f2c2beb146c2ed.jpg"
+    },
+    {
+      "title": "胶东半岛观察",
+      "created": "2025-10-08 13:00",
+      "link": "https://log.cns.red/daily/Jiaodong-Peninsula/",
+      "author": "钟意博客",
+      "avatar": "https://upyun.thatcdn.cn/hexo/stellar/image/favicon.webp"
     },
     {
       "title": "拖延症救星",
