@@ -4,9 +4,16 @@
     "active_num": 40,
     "error_num": 0,
     "article_num": 37,
-    "last_updated_time": "2026-05-20 15:20"
+    "last_updated_time": "2026-05-21 15:25"
   },
   "article_data": [
+    {
+      "title": "作为个人开发者，我是如何开发收费功能的？",
+      "created": "2026-05-20 03:39",
+      "link": "http://achuan-2.top/post/as-an-individual-developer-how-do-i-develop-paid-functions-1jtxzr.html",
+      "author": "Achuan-2",
+      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
+    },
     {
       "title": "优化实验室网络",
       "created": "2026-04-11 13:11",
@@ -158,13 +165,6 @@
       "title": "研究生要有“农夫思维”，以产出为导向，放下“打铁匠思维”",
       "created": "2025-08-02 08:26",
       "link": "http://achuan-2.top/post/postgraduate-students-should-have-a-farmer-s-mind-be-outputoriented-and-put-aside-the-blacksmith-s-mind-1evlno.html",
-      "author": "Achuan-2",
-      "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
-    },
-    {
-      "title": "《智能简史》",
-      "created": "2025-07-31 15:23",
-      "link": "http://achuan-2.top/post/a-brief-history-of-intelligence-zer007.html",
       "author": "Achuan-2",
       "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
