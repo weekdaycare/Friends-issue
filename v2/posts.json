@@ -4,7 +4,7 @@
     "active_num": 40,
     "error_num": 0,
     "article_num": 34,
-    "last_updated_time": "2026-06-23 14:47"
+    "last_updated_time": "2026-06-24 14:29"
   },
   "article_data": [
     {
@@ -29,13 +29,6 @@
       "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
-      "title": "优化实验室网络",
-      "created": "2026-04-11 13:11",
-      "link": "https://blog.hzchu.top/2026/opt-lab-net/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
       "title": "只是它终究不是我曾经想象的模样",
       "created": "2026-03-17 23:27",
       "link": "https://flyalready.com/2026-03-17-hailmary/",
@@ -43,25 +36,11 @@
       "avatar": "https://weavatar.com/avatar/2776070fbf6cf5174f64ece2b182f92b55f4a80dedf18382070f9823e8a4c136"
     },
     {
-      "title": "解决一些笔记本电脑更换主板后的问题",
-      "created": "2026-02-26 21:18",
-      "link": "https://blog.hzchu.top/2026/solve-laptop-motherboard-problems/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
       "title": "连续两个晚上做梦笑醒",
       "created": "2026-02-26 12:00",
       "link": "https://xaoxuu.com/blog/20260226/",
       "author": "xaoxuu",
       "avatar": "https://pic1.imgdb.cn/item/6342621016f2c2beb146c2ed.jpg"
-    },
-    {
-      "title": "手动编译耗子面板安装的OpenResty",
-      "created": "2026-02-26 11:41",
-      "link": "https://blog.hzchu.top/2026/haozi-openresty-build/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
       "title": "年度｜我的2025年度总结",
@@ -188,6 +167,27 @@
       "link": "https://easyf12.top/posts/b29d3567/",
       "author": "一蓑烟雨",
       "avatar": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp"
+    },
+    {
+      "title": "Beta分布：缘由及推导",
+      "created": "2025-07-09 14:00",
+      "link": "https://blog.snowflake.zone/posts/29/",
+      "author": "Felix Chen",
+      "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
+    },
+    {
+      "title": "强化学习：基本概念和优化目标",
+      "created": "2025-07-06 10:50",
+      "link": "https://blog.snowflake.zone/posts/28/",
+      "author": "Felix Chen",
+      "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
+    },
+    {
+      "title": "C++条件变量(Conditional Variable)",
+      "created": "2025-05-12 00:56",
+      "link": "https://blog.snowflake.zone/posts/27/",
+      "author": "Felix Chen",
+      "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
     },
     {
       "title": "年更",
