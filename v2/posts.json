@@ -3,10 +3,24 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 37,
-    "last_updated_time": "2026-10-15 16:23"
+    "article_num": 40,
+    "last_updated_time": "2026-10-16 16:09"
   },
   "article_data": [
+    {
+      "title": "在Word里调整论文格式",
+      "created": "2026-10-16 23:45",
+      "link": "https://blog.hzchu.top/2026/gzhu-thesis-format-and-word-formatting-tips/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
+    },
+    {
+      "title": "2026 我还是没打算做成年人",
+      "created": "2026-10-15 00:00",
+      "link": "https://flyalready.com/2026-10-15-isnt-it-pretty-to-think-so/",
+      "author": "宇宙尽头的餐馆",
+      "avatar": "https://weavatar.com/avatar/2776070fbf6cf5174f64ece2b182f92b55f4a80dedf18382070f9823e8a4c136"
+    },
     {
       "title": "搭建Garage储存集群",
       "created": "2026-10-02 11:31",
@@ -41,13 +55,6 @@
       "link": "https://skyreeves.com/post/8cdf255d/",
       "author": "SkyReeves",
       "avatar": "https://img.skyreeves.com/main/avatar96.gif"
-    },
-    {
-      "title": "我知一切顺利是美好的祝愿",
-      "created": "2026-09-09 22:37",
-      "link": "https://flyalready.com/2026-08-04-stories-of-our-pasts/",
-      "author": "宇宙尽头的餐馆",
-      "avatar": "https://weavatar.com/avatar/2776070fbf6cf5174f64ece2b182f92b55f4a80dedf18382070f9823e8a4c136"
     },
     {
       "title": "从PPO到GEPO：大模型强化学习中的组策略优化演进",
@@ -113,13 +120,6 @@
       "avatar": "https://www.achuan-2.top/assets/ico/Achuan.jpg"
     },
     {
-      "title": "优化实验室网络",
-      "created": "2026-04-11 13:11",
-      "link": "https://blog.hzchu.top/2026/opt-lab-net/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
-    },
-    {
       "title": "连续两个晚上做梦笑醒",
       "created": "2026-02-26 12:00",
       "link": "https://xaoxuu.com/blog/20260226/",
@@ -167,6 +167,13 @@
       "link": "https://easyf12.top/posts/6fa0ff8b/",
       "author": "一蓑烟雨",
       "avatar": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp"
+    },
+    {
+      "title": "使用 Obsidian 和 Nextcloud 配置多端同步日记",
+      "created": "2025-10-10 16:37",
+      "link": "https://blog.lsy223622.com/archives/75/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "拖延症救星",
@@ -223,6 +230,20 @@
       "link": "https://blog.snowflake.zone/posts/28/",
       "author": "Felix Chen",
       "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
+    },
+    {
+      "title": "雅思半裸考7.5😋",
+      "created": "2025-07-01 15:47",
+      "link": "https://blog.lsy223622.com/archives/72/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
+    },
+    {
+      "title": "从宝塔面板迁移网站到 1Panel 的注意事项",
+      "created": "2025-06-28 09:54",
+      "link": "https://blog.lsy223622.com/archives/70/",
+      "author": "木生懒得写博客",
+      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "配置 WSL 开发 Flet 应用",
