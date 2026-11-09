@@ -3,14 +3,21 @@
     "friends_num": 40,
     "active_num": 40,
     "error_num": 0,
-    "article_num": 40,
-    "last_updated_time": "2026-11-08 17:39"
+    "article_num": 37,
+    "last_updated_time": "2026-11-09 21:58"
   },
   "article_data": [
     {
+      "title": "限速网络下的标注数据传输方法",
+      "created": "2026-11-09 14:14",
+      "link": "https://blog.hzchu.top/2026/annotation-data-transfer-over-rate-limited-networks/",
+      "author": "Thun888",
+      "avatar": "https://blog.hzchu.top/img/avatar.webp"
+    },
+    {
       "title": "使用豆包分类图片数据",
       "created": "2026-11-07 15:25",
-      "link": "https://blog.hzchu.top/2026/%E4%BD%BF%E7%94%A8%E8%B1%86%E5%8C%85%E5%88%86%E7%B1%BB%E5%9B%BE%E7%89%87%E6%95%B0%E6%8D%AE/",
+      "link": "https://blog.hzchu.top/2026/classify-image-data-with-doubao/",
       "author": "Thun888",
       "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
@@ -34,13 +41,6 @@
       "link": "https://flyalready.com/2026-10-15-isnt-it-pretty-to-think-so/",
       "author": "宇宙尽头的餐馆",
       "avatar": "https://weavatar.com/avatar/2776070fbf6cf5174f64ece2b182f92b55f4a80dedf18382070f9823e8a4c136"
-    },
-    {
-      "title": "搭建Garage储存集群",
-      "created": "2026-10-02 11:31",
-      "link": "https://blog.hzchu.top/2026/garage/",
-      "author": "Thun888",
-      "avatar": "https://blog.hzchu.top/img/avatar.webp"
     },
     {
       "title": "好好活着",
@@ -169,13 +169,6 @@
       "avatar": "https://img.easyf12.top/images/2022/10/15/634a8b4186889.webp"
     },
     {
-      "title": "使用 Obsidian 和 Nextcloud 配置多端同步日记",
-      "created": "2025-10-10 16:37",
-      "link": "https://blog.lsy223622.com/posts/2025101101/",
-      "author": "木生懒得写博客",
-      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
-    },
-    {
       "title": "拖延症救星",
       "created": "2025-09-28 04:20",
       "link": "https://blog.findingx.cc/2025/09/28/122039/",
@@ -230,20 +223,6 @@
       "link": "https://blog.snowflake.zone/posts/28/",
       "author": "Felix Chen",
       "avatar": "https://blog.snowflake.zone/assets/profile.jpg"
-    },
-    {
-      "title": "雅思半裸考7.5😋",
-      "created": "2025-07-01 15:47",
-      "link": "https://blog.lsy223622.com/posts/2025070101/",
-      "author": "木生懒得写博客",
-      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
-    },
-    {
-      "title": "从宝塔面板迁移网站到 1Panel 的注意事项",
-      "created": "2025-06-28 09:54",
-      "link": "https://blog.lsy223622.com/posts/2025062801/",
-      "author": "木生懒得写博客",
-      "avatar": "https://cravatar.cn/avatar/7aba6993da55fc5023f11022e4b552c7?s=432"
     },
     {
       "title": "配置 WSL 开发 Flet 应用",
